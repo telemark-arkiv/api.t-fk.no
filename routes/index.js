@@ -5,7 +5,7 @@ var routes = [
     method: 'GET',
     path: '/',
     handler: function (request, reply) {
-      reply("Hello, i'm your API");
+      reply({"message": "Hello, i'm your API"});
     }
   }
 ]
