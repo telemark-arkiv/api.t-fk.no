@@ -18,5 +18,9 @@
   "dependencies": {
     "hapi": "^7.2.0",
     "mongojs": "^0.15.1"
+  },
+  "devDependencies": {
+    "mocha": "^2.0.1",
+    "supertest": "^0.14.0"
   }
 }
