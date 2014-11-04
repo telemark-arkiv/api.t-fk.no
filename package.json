@@ -1,11 +1,22 @@
 {
   "name": "api.t-fk.no",
-  "description" : "API for Telemark fylkeskommune",
+  "description": "API for Telemark fylkeskommune",
   "version": "1.0.0",
   "private": true,
   "author": {
     "name": "Geir Gåsodden",
     "email": "geir.gasodden@pythonia.no",
     "url": "https://github.com/zrrrzzt"
+  },
+  "contributors": [
+    {
+      "name": "Jonas Enge",
+      "email": "jonas.enge@gmail.com",
+      "url": "https://github.com/maccyber"
+    }
+  ],
+  "dependencies": {
+    "hapi": "^7.2.0",
+    "mongojs": "^0.15.1"
   }
 }
