@@ -28,3 +28,11 @@ $ npm start
 ```
 $ npm test
 ```
+
+##Development
+
+Setup everything with dummydata
+
+```
+$ npm init
+```

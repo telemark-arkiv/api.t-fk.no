@@ -8,7 +8,7 @@ var fs = require('fs')
   ;
 
 function getData(callback){
-  fs.readFile('data/municipalities.json', function(err, data){
+  fs.readFile('init/data/municipalities.json', function(err, data){
     if(err){
       return callback(err, null);
     } else {

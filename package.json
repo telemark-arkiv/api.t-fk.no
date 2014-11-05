@@ -17,7 +17,8 @@
   ],
   "scripts": {
     "start": "node index.js",
-    "test": "mocha --reporter spec test/*.js"
+    "test": "mocha --reporter spec test/*.js",
+    "init": "node 'init/municipalities.js'"
   },
   "dependencies": {
     "hapi": "^7.2.0",
