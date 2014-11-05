@@ -16,7 +16,7 @@
     }
   ],
   "scripts": {
-    "start": "node server.js",
+    "start": "node index.js",
     "test": "mocha --reporter spec test/*.js"
   },
   "dependencies": {

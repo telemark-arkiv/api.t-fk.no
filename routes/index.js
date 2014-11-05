@@ -1,13 +1,9 @@
 'use strict'
 
-var routes = [
-  {
-    method: 'GET',
-    path: '/',
-    handler: function (request, reply) {
-      reply({"message": "Hello, i'm your API"});
-    }
-  }
-]
+var publicRoutes = require('./public')
+  , routes = []
+  ;
+
+routes = routes.concat(publicRoutes);
 
 module.exports = routes;
