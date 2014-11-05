@@ -27,11 +27,7 @@ function addMunicipality(post){
   });
 }
 
-// First we drop the collection
-municipality.drop();
-
-// Get the init data
-getData(function(err, data){
+function addMunicipalities(err, data){
   if(err){
     console.error(err)
   } else {
@@ -39,4 +35,10 @@ getData(function(err, data){
       addMunicipality(municipality);
     });
   }
-});
+}
+
+// First we drop the collection
+municipality.drop();
+
+// Get the init data, add them to the collection
+getData(addMunicipalities);
