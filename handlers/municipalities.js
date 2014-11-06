@@ -3,11 +3,11 @@
 var mongojs = require('mongojs')
   , config = require('../config')
   , db = mongojs(config.DB)
-  , municipality = db.collection('municipality')
+  , municipalities = db.collection('municipalities')
   ;
 
 function getMunicipalities(request, reply){
-  municipality.find(request.query, function (err, data) {
+  municipalities.find(request.query, function (err, data) {
     if(err){
       reply(err);
     } else {
@@ -17,7 +17,7 @@ function getMunicipalities(request, reply){
 }
 
 function getMunicipality(request, reply){
-  municipality.findOne({kode:request.params.municipalityId}, function (err, data) {
+  municipalities.findOne({kode:request.params.municipalityId}, function (err, data) {
     if(err){
       reply(err)
     } else {
@@ -25,7 +25,6 @@ function getMunicipality(request, reply){
     }
   });
 }
-
 
 module.exports.getMunicipalities = getMunicipalities;
 

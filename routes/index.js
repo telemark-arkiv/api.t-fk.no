@@ -1,7 +1,7 @@
 'use strict'
 
 var publicRoutes = require('./public')
-  , municipalityRoutes = require('./municipality')
+  , municipalityRoutes = require('./municipalities')
   , departmentRoutes = require('./departments')
   , journalRoutes = require('./journals')
   , routes = []

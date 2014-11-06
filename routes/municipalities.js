@@ -1,6 +1,6 @@
 'use strict';
 
-var handlers = require('../handlers/municipality')
+var handlers = require('../handlers/municipalities')
   , routes
   ;
 

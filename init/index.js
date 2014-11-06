@@ -6,7 +6,7 @@ var fs = require('fs')
   , DB = mongojs(config.DB)
   , dataList = [
     {
-      "db":DB.collection('municipality'),
+      "db":DB.collection('municipalities'),
       "file": "init/data/municipalities.json"
     },
     {
