@@ -26,10 +26,10 @@ describe('Server municipality', function () {
     })
   });
 
-  describe('GET /municipality/5459eff5f8b82e7b40fcebdb', function(){
+  describe('GET /municipality/0805', function(){
     it('respond with json', function(done){
       request
-        .get('/municipality/5459eff5f8b82e7b40fcebdb')
+        .get('/municipality/0805')
         .set('Accept', 'application/json')
         .expect('Content-Type', /json/)
         .expect(200, done);

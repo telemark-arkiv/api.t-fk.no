@@ -17,7 +17,7 @@ function getMunicipalities(request, reply){
 }
 
 function getMunicipality(request, reply){
-  municipality.findOne({_id:mongojs.ObjectId(request.params.municipalityId)}, function (err, data) {
+  municipality.findOne({kode:request.params.municipalityId}, function (err, data) {
     if(err){
       reply(err)
     } else {
