@@ -1,0 +1,809 @@
+[
+  {
+    "departmentId": "25",
+    "departmentName": "Bamble vgs",
+    "email": "bamble.vgs@t-fk.no",
+    "url": "bamble.vgs.no",
+    "openingHours": "",
+    "places": [
+      {
+        "departmentId": "25",
+        "name": "",
+        "address": "Tønderveien 6, 3960 Stathelle",
+        "phone": "35968650"
+      }
+    ]
+  },
+  {
+    "departmentId": "19",
+    "departmentName": "Tfk eiendom",
+    "email": "tfkeiendom@tfkeiendom.no",
+    "url": "tfkeiendom.no",
+    "openingHours": "",
+    "places": [
+      {
+        "departmentId": "19",
+        "name": "",
+        "address": "Fylkesbakken 6, 3706 Skien",
+        "phone": "35917488"
+      }
+    ]
+  },
+  {
+    "departmentId": "20",
+    "departmentName": "Kragerø vgs",
+    "email": "kragero.vgs@t-fk.no",
+    "url": "kragero.vgs.no",
+    "openingHours": "",
+    "places": [
+      {
+        "departmentId": "20",
+        "name": "",
+        "address": "Frydensborgveien 9-11 3770 Kragerø",
+        "phone": "35985200"
+      }
+    ]
+  },
+  {
+    "departmentId": "30",
+    "departmentName": "Croftholmen vgs (Utg",
+    "email": "croftholmen.vgs@t-fk.no",
+    "url": "croftholmen.vgs.no",
+    "openingHours": "",
+    "places": [
+      {
+        "departmentId": "30",
+        "name": "",
+        "address": "Tostrups vei 8 3960 Stathelle",
+        "phone": "35917900"
+      }
+    ]
+  },
+  {
+    "departmentId": "35",
+    "departmentName": "Porsgrunn vgs",
+    "email": "porsgrunn.vgs@t-fk.no",
+    "url": "porsgrunn.vgs.no",
+    "openingHours": "",
+    "places": [
+      {
+        "departmentId": "35",
+        "name": "Nord",
+        "address": "Kjølnes Ring 58 , Porsgrunn",
+        "phone": "35917500"
+      },
+      {
+        "departmentId": "35",
+        "name": "Sør",
+        "address": "Kjølnes ring 20, 3918 Porsgrunn",
+        "phone": "35917666"
+      }
+    ]
+  },
+  {
+    "departmentId": "40",
+    "departmentName": "Fagskolen Telemark",
+    "email": "post@fagskolentelemark.no",
+    "url": "fagskolentelemark.no",
+    "openingHours": "",
+    "places": [
+      {
+        "departmentId": "40",
+        "name": "",
+        "address": "Kjølnes Ring 26, 3918 Porsgrunn",
+        "phone": "35917750"
+      }
+    ]
+  },
+  {
+    "departmentId": "45",
+    "departmentName": "Skogmo vgs",
+    "email": "skogmo.vgs@t-fk.no",
+    "url": "skogmo.vgs.no",
+    "openingHours": "",
+    "places": [
+      {
+        "departmentId": "45",
+        "name": "",
+        "address": "Kjørbekkdalen 11, 3735 Skien",
+        "phone": "35919200"
+      }
+    ]
+  },
+  {
+    "departmentId": "50",
+    "departmentName": "Hjalmar Johansen vgs",
+    "email": "hjalmarjohansen.vgs@t-fk.no",
+    "url": "hjalmarjohansen.vgs.no",
+    "openingHours": "",
+    "places": [
+      {
+        "departmentId": "50",
+        "name": "Fritidsparken",
+        "address": "Moflatveien 38, 3733 Skien",
+        "phone": "35918300"
+      },
+      {
+        "departmentId": "50",
+        "name": "Klosterskogen",
+        "address": "Olai Skullerudsvei 20, 3730 Skien",
+        "phone": "35918300"
+      }
+    ]
+  },
+  {
+    "departmentId": "55",
+    "departmentName": "Skien vgs",
+    "email": "skien.vgs@t-fk.no",
+    "url": "skien.vgs.no",
+    "openingHours": "",
+    "places": [
+      {
+        "departmentId": "55",
+        "name": "Prestejordet",
+        "address": "Einar østvedts gate 12, 3724 Skien",
+        "phone": "35918000"
+      },
+      {
+        "departmentId": "55",
+        "name": "Brekkeby",
+        "address": "Rektor Ørns gate 2, 3717 Skien",
+        "phone": "35918050"
+      }
+    ]
+  },
+  {
+    "departmentId": "65",
+    "departmentName": "Nome vgs",
+    "email": "sove.vgs@t-fk.no",
+    "url": "sove.vgs.no",
+    "openingHours": "08:00 - 15:30",
+    "places": [
+      {
+        "departmentId": "65",
+        "name": "",
+        "address": "Søvevegen 8, 3830 Ulefoss",
+        "phone": "35948600"
+      }
+    ]
+  },
+  {
+    "departmentId": "75",
+    "departmentName": "Bø vgs",
+    "email": "bo.vgs@t-fk.no",
+    "url": "bo.vgs.no",
+    "openingHours": "08:00 - 15:30",
+    "places": [
+      {
+        "departmentId": "75",
+        "name": "Bø",
+        "address": "Bø Vidaregåande Skule, 3833 Bø",
+        "phone": "35061200"
+      },
+      {
+        "departmentId": "75",
+        "name": "Seljord",
+        "address": "Brøløsvegen 2,3840 Seljord",
+        "phone": "35065070"
+      }
+    ]
+  },
+  {
+    "departmentId": "80",
+    "departmentName": "Notodden vgs",
+    "email": "notodden.vgs@t-fk.no",
+    "url": "notodden.vgs.no",
+    "openingHours": "",
+    "places": [
+      {
+        "departmentId": "80",
+        "name": "Tinfos",
+        "address": "Heddalsvegen 43674 Notodden",
+        "phone": "35027900"
+      },
+      {
+        "departmentId": "80",
+        "name": "Tinnes",
+        "address": "Storgata 81, 3674 Notodden",
+        "phone": "35027401"
+      }
+    ]
+  },
+  {
+    "departmentId": "90",
+    "departmentName": "Vest-Telemark vgs",
+    "email": "vest-telemark.vgs@t-fk.no",
+    "url": "vest-telemark.vgs.no",
+    "openingHours": "",
+    "places": [
+      {
+        "departmentId": "90",
+        "name": "",
+        "address": "Storvegen 195,3880 Dalen",
+        "phone": "35079100"
+      }
+    ]
+  },
+  {
+    "departmentId": "95",
+    "departmentName": "Rjukan vgs",
+    "email": "rjukan.vgs@t-fk.no",
+    "url": "rjukan.vgs.no",
+    "openingHours": "07:30 - 15:30",
+    "places": [
+      {
+        "departmentId": "95",
+        "name": "",
+        "address": "Såheimsveien 22, 3660 Rjukan",
+        "phone": "35082200"
+      }
+    ]
+  },
+  {
+    "departmentId": "3475",
+    "departmentName": "Narkose sykehuset",
+    "email": "",
+    "url": "",
+    "openingHours": ""
+  },
+  {
+    "departmentId": "200",
+    "departmentName": "Rådmannens ledergrup",
+    "email": "post@t-fk.no",
+    "url": "www.telemark.no",
+    "openingHours": "08:00 - 15:45",
+    "places": [
+      {
+        "departmentId": "200",
+        "name": "",
+        "address": "Fylkesbakken 10, 3715 Skien",
+        "phone": "35917000"
+      }
+    ]
+  },
+  {
+    "departmentId": "206",
+    "departmentName": "Økonomi",
+    "email": "post@t-fk.no",
+    "url": "www.telemark.no",
+    "openingHours": "08:00 - 15:45",
+    "places": [
+      {
+        "departmentId": "206",
+        "name": "",
+        "address": "Fylkesbakken 10, 3715 Skien",
+        "phone": "35917000"
+      }
+    ]
+  },
+  {
+    "departmentId": "207",
+    "departmentName": "Personal- og org.avd",
+    "email": "post@t-fk.no",
+    "url": "www.telemark.no",
+    "openingHours": "08:00 - 15:45",
+    "places": [
+      {
+        "departmentId": "207",
+        "name": "",
+        "address": "Fylkesbakken 10, 3715 Skien",
+        "phone": "35917000"
+      }
+    ]
+  },
+  {
+    "departmentId": "208",
+    "departmentName": "IT",
+    "email": "post@t-fk.no",
+    "url": "www.telemark.no",
+    "openingHours": "08:00 - 15:45",
+    "places": [
+      {
+        "departmentId": "208",
+        "name": "",
+        "address": "Fylkesbakken 10, 3715 Skien",
+        "phone": "35917000"
+      }
+    ]
+  },
+  {
+    "departmentId": "210",
+    "departmentName": "Service",
+    "email": "post@t-fk.no",
+    "url": "www.telemark.no",
+    "openingHours": "08:00 - 15:45",
+    "places": [
+      {
+        "departmentId": "210",
+        "name": "",
+        "address": "Fylkesbakken 10, 3715 Skien",
+        "phone": "35917000"
+      }
+    ]
+  },
+  {
+    "departmentId": "211",
+    "departmentName": "Arkiv",
+    "email": "post@t-fk.no",
+    "url": "www.telemark.no",
+    "openingHours": "08:00 - 15:45",
+    "places": [
+      {
+        "departmentId": "211",
+        "name": "",
+        "address": "Fylkesbakken 10, 3715 Skien",
+        "phone": "35917000"
+      }
+    ]
+  },
+  {
+    "departmentId": "212",
+    "departmentName": "Kulturminnevern",
+    "email": "post@t-fk.no",
+    "url": "www.telemark.no",
+    "openingHours": "08:00 - 15:45",
+    "places": [
+      {
+        "departmentId": "212",
+        "name": "",
+        "address": "Fylkesbakken 10, 3715 Skien",
+        "phone": "35917000"
+      }
+    ]
+  },
+  {
+    "departmentId": "213",
+    "departmentName": "Areal og transport",
+    "email": "post@t-fk.no",
+    "url": "www.telemark.no",
+    "openingHours": "08:00 - 15:45",
+    "places": [
+      {
+        "departmentId": "213",
+        "name": "",
+        "address": "Fylkesbakken 10, 3715 Skien",
+        "phone": "35917000"
+      }
+    ]
+  },
+  {
+    "departmentId": "214",
+    "departmentName": "Kultur",
+    "email": "post@t-fk.no",
+    "url": "www.telemark.no",
+    "openingHours": "08:00 - 15:45",
+    "places": [
+      {
+        "departmentId": "214",
+        "name": "",
+        "address": "Fylkesbakken 10, 3715 Skien",
+        "phone": "35917000"
+      }
+    ]
+  },
+  {
+    "departmentId": "216",
+    "departmentName": "Internationalt team",
+    "email": "post@t-fk.no",
+    "url": "www.telemark.no",
+    "openingHours": "08:00 - 15:45",
+    "places": [
+      {
+        "departmentId": "216",
+        "name": "",
+        "address": "Fylkesbakken 10, 3715 Skien",
+        "phone": "35917000"
+      }
+    ]
+  },
+  {
+    "departmentId": "220",
+    "departmentName": "Telemarkskanalen",
+    "email": "post@t-fk.no",
+    "url": "www.telemark.no",
+    "openingHours": "08:00 - 15:45",
+    "places": [
+      {
+        "departmentId": "220",
+        "name": "",
+        "address": "Fylkesbakken 10, 3715 Skien",
+        "phone": "35917000"
+      }
+    ]
+  },
+  {
+    "departmentId": "221",
+    "departmentName": "Kommunikasjon",
+    "email": "post@t-fk.no",
+    "url": "www.telemark.no",
+    "openingHours": "08:00 - 15:45",
+    "places": [
+      {
+        "departmentId": "221",
+        "name": "",
+        "address": "Fylkesbakken 10, 3715 Skien",
+        "phone": "35917000"
+      }
+    ]
+  },
+  {
+    "departmentId": "222",
+    "departmentName": "Nyskaping",
+    "email": "post@t-fk.no",
+    "url": "www.telemark.no",
+    "openingHours": "08:00 - 15:45",
+    "places": [
+      {
+        "departmentId": "222",
+        "name": "",
+        "address": "Fylkesbakken 10, 3715 Skien",
+        "phone": "35917000"
+      }
+    ]
+  },
+  {
+    "departmentId": "223",
+    "departmentName": "Karrieresenteret",
+    "email": "ki@karrieresentertelemark.no",
+    "url": "www.karrieresentertelemark.no",
+    "openingHours": "08:00 - 15:45",
+    "places": [
+      {
+        "departmentId": "223",
+        "name": "",
+        "address": "Torggata 18, 3717 Skien",
+        "phone": "35519160"
+      }
+    ]
+  },
+  {
+    "departmentId": "224",
+    "departmentName": "Videreg. opplæring",
+    "email": "post@t-fk.no",
+    "url": "www.telemark.no",
+    "openingHours": "08:00 - 15:45",
+    "places": [
+      {
+        "departmentId": "224",
+        "name": "",
+        "address": "Fylkesbakken 10, 3715 Skien",
+        "phone": "35917000"
+      }
+    ]
+  },
+  {
+    "departmentId": "225",
+    "departmentName": "Analyse og utredning",
+    "email": "post@t-fk.no",
+    "url": "www.telemark.no",
+    "openingHours": "08:00 - 15:45",
+    "places": [
+      {
+        "departmentId": "225",
+        "name": "",
+        "address": "Fylkesbakken 10, 3715 Skien",
+        "phone": "35917000"
+      }
+    ]
+  },
+  {
+    "departmentId": "226",
+    "departmentName": "Folkehelse",
+    "email": "post@t-fk.no",
+    "url": "www.telemark.no",
+    "openingHours": "08:00 - 15:45",
+    "places": [
+      {
+        "departmentId": "226",
+        "name": "",
+        "address": "Fylkesbakken 10, 3715 Skien",
+        "phone": "35917000"
+      }
+    ]
+  },
+  {
+    "departmentId": "227",
+    "departmentName": "Juridisk\/pol. stab",
+    "email": "post@t-fk.no",
+    "url": "www.telemark.no",
+    "openingHours": "08:00 - 15:45",
+    "places": [
+      {
+        "departmentId": "227",
+        "name": "",
+        "address": "Fylkesbakken 10, 3715 Skien",
+        "phone": "35917000"
+      }
+    ]
+  },
+  {
+    "departmentId": "250",
+    "departmentName": "Telemarksk.reg.park",
+    "email": "post@t-fk.no",
+    "url": "www.telemark.no",
+    "openingHours": "08:00 - 15:45",
+    "places": [
+      {
+        "departmentId": "250",
+        "name": "",
+        "address": "Fylkesbakken 10, 3715 Skien",
+        "phone": "35917000"
+      }
+    ]
+  },
+  {
+    "departmentId": "1135",
+    "departmentName": "Fagforeningstillitsvalgte",
+    "email": "post@t-fk.no",
+    "url": "www.telemark.no",
+    "openingHours": "08:00 - 15:45",
+    "places": [
+      {
+        "departmentId": "1135",
+        "name": "",
+        "address": "Fylkesbakken 10, 3715 Skien",
+        "phone": "35917000"
+      }
+    ]
+  },
+  {
+    "departmentId": "3401",
+    "departmentName": "Fylkestannlegen",
+    "email": "post@t-fk.no",
+    "url": "www.telemark.no",
+    "openingHours": "08:00 - 15:45",
+    "places": [
+      {
+        "departmentId": "3401",
+        "name": "",
+        "address": "Fylkesbakken 10, 3715 Skien",
+        "phone": "35917000"
+      }
+    ]
+  },
+  {
+    "departmentId": "3412",
+    "departmentName": "Tannklinikken Drangedal",
+    "email": "",
+    "url": "",
+    "openingHours": "",
+    "places": [
+      {
+        "departmentId": "3412",
+        "name": "",
+        "address": "Gudbrandsveien 1, 3750 Drangedal",
+        "phone": "35998030"
+      }
+    ]
+  },
+  {
+    "departmentId": "3450",
+    "departmentName": "Spesialisttannklinikken",
+    "email": "",
+    "url": "",
+    "openingHours": "",
+    "places": [
+      {
+        "departmentId": "3450",
+        "name": "",
+        "address": "Telemarksvegen 170, 3734 Skien",
+        "phone": "35583930"
+      }
+    ]
+  },
+  {
+    "departmentId": "3411",
+    "departmentName": "Tannklinikken Stathelle",
+    "email": "",
+    "url": "",
+    "openingHours": "",
+    "places": [
+      {
+        "departmentId": "3411",
+        "name": "",
+        "address": "Gangveien 10,3960 Stathelle",
+        "phone": "35968280"
+      }
+    ]
+  },
+  {
+    "departmentId": "3413",
+    "departmentName": "Tannklinikken Kragerø",
+    "email": "",
+    "url": "",
+    "openingHours": "",
+    "places": [
+      {
+        "departmentId": "3413",
+        "name": "",
+        "address": "Løkkebakken 8, 3770 Kragerø",
+        "phone": "35985990"
+      }
+    ]
+  },
+  {
+    "departmentId": "3422",
+    "departmentName": "Tannklinikken Ulefoss",
+    "email": "",
+    "url": "",
+    "openingHours": "",
+    "places": [
+      {
+        "departmentId": "3422",
+        "name": "",
+        "address": "Stårrvegen 14, 3830 Ulefoss",
+        "phone": "35944284"
+      }
+    ]
+  },
+  {
+    "departmentId": "3425",
+    "departmentName": "Tannklinikken Rjukan",
+    "email": "",
+    "url": "",
+    "openingHours": "",
+    "places": [
+      {
+        "departmentId": "3425",
+        "name": "",
+        "address": "Storgt 16, 3660 Rjukan",
+        "phone": "35090948"
+      }
+    ]
+  },
+  {
+    "departmentId": "3432",
+    "departmentName": "Tannklinikken Seljord",
+    "email": "",
+    "url": "",
+    "openingHours": "",
+    "places": [
+      {
+        "departmentId": "3432",
+        "name": "",
+        "address": "Brøløsvegen 25 d, 3840 Seljord",
+        "phone": "35050159"
+      }
+    ]
+  },
+  {
+    "departmentId": "199",
+    "departmentName": "Politikere",
+    "email": "",
+    "url": "",
+    "openingHours": ""
+  },
+  {
+    "departmentId": "3434",
+    "departmentName": "Tannklinikken Vinje",
+    "email": "",
+    "url": "",
+    "openingHours": "",
+    "places": [
+      {
+        "departmentId": "3434",
+        "name": "",
+        "address": "Åmotvegen, 3890 Vinje",
+        "phone": "35072480"
+      }
+    ]
+  },
+  {
+    "departmentId": "3414",
+    "departmentName": "Tannklinikken Porsgrunn",
+    "email": "",
+    "url": "",
+    "openingHours": "",
+    "places": [
+      {
+        "departmentId": "3414",
+        "name": "",
+        "address": "C.E. Berg-Hanssensgate 20, 3916 Porsgrunn",
+        "phone": "35566560"
+      }
+    ]
+  },
+  {
+    "departmentId": "3424",
+    "departmentName": "Tannklinikken Notodden",
+    "email": "",
+    "url": "",
+    "openingHours": "",
+    "places": [
+      {
+        "departmentId": "3424",
+        "name": "",
+        "address": "Heddalsveien 22, 3674 Notodden",
+        "phone": "35027760"
+      }
+    ]
+  },
+  {
+    "departmentId": "3460",
+    "departmentName": "Fengsel",
+    "email": "",
+    "url": "",
+    "openingHours": ""
+  },
+  {
+    "departmentId": "3442",
+    "departmentName": "Tannklinikken Siljan",
+    "email": "",
+    "url": "",
+    "openingHours": "",
+    "places": [
+      {
+        "departmentId": "3442",
+        "name": "",
+        "address": "Sentrumsveien 22, 3748 Siljan",
+        "phone": "35941346"
+      }
+    ]
+  },
+  {
+    "departmentId": "3441",
+    "departmentName": "Tannklinikken Skien",
+    "email": "",
+    "url": "",
+    "openingHours": "",
+    "places": [
+      {
+        "departmentId": "3441",
+        "name": "",
+        "address": "Telemarksvegen 170, 3734 Skien",
+        "phone": "35583920"
+      }
+    ]
+  },
+  {
+    "departmentId": "3433",
+    "departmentName": "Tannklinikken Dalen",
+    "email": "",
+    "url": "",
+    "openingHours": "",
+    "places": [
+      {
+        "departmentId": "3433",
+        "name": "",
+        "address": "Revahaugvegen 2, 3880 Dalen",
+        "phone": "35077200"
+      }
+    ]
+  },
+  {
+    "departmentId": "3421",
+    "departmentName": "Tannklinikken Midt-Telemark",
+    "email": "",
+    "url": "",
+    "openingHours": "",
+    "places": [
+      {
+        "departmentId": "3421",
+        "name": "",
+        "address": "Hellandveien 12, 3800 Bø",
+        "phone": "35060110"
+      }
+    ]
+  },
+  {
+    "departmentId": "229",
+    "departmentName": "VGO-kval/utv",
+    "email": "post@t-fk.no",
+    "url": "www.telemark.no",
+    "openingHours": "08:00 - 15:45"
+  },
+  {
+    "departmentId": "228",
+    "departmentName": "PP-tjenesten",
+    "email": "post.ppt@t-fk.no",
+    "url": "www.telemark.no",
+    "openingHours": ""
+  },
+  {
+    "departmentId": "230",
+    "departmentName": "VGO-drift",
+    "email": "post@t-fk.no",
+    "url": "www.telemark.no",
+    "openingHours": "08:00 - 15:45"
+  }
+]
