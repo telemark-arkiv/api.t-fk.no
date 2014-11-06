@@ -34,5 +34,5 @@ $ npm test
 Setup everything with dummydata
 
 ```
-$ npm init
+$ npm run-script init-dev
 ```
