@@ -25,6 +25,7 @@
     "mongojs": "^0.15.1"
   },
   "devDependencies": {
+    "jsdoc": "^3.3.0-alpha10",
     "mocha": "^2.0.1",
     "supertest": "^0.14.0"
   }
