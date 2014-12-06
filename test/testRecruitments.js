@@ -6,7 +6,7 @@ var request = require('supertest')
 
 request = request('http://localhost:3000');
 
-describe('Server journals', function () {
+describe('Server recruitments', function () {
 
   before(function () {
     server.start();
@@ -16,20 +16,20 @@ describe('Server journals', function () {
     server.stop();
   });
 
-  describe('GET /journals', function(){
+  describe('GET /recruitments', function(){
     it('respond with json', function(done){
       request
-        .get('/journals')
+        .get('/recruitments')
         .set('Accept', 'application/json')
         .expect('Content-Type', /json/)
         .expect(200, done);
     })
   });
 
-  describe('GET /journals/2014_65', function(){
+  describe('GET /recruitment/2402', function(){
     it('respond with json', function(done){
       request
-        .get('/journal/2014_65')
+        .get('/recruitment/2402')
         .set('Accept', 'application/json')
         .expect('Content-Type', /json/)
         .expect(200, done);

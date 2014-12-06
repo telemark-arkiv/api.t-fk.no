@@ -12,7 +12,7 @@ routes = [
   },
   {
     method: 'GET',
-    path: '/recruitment/{recruitmentId}',
+    path: '/recruitment/{jobid}',
     handler: handlers.getRecruitment
   }
 ]

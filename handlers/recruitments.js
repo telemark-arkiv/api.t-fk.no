@@ -17,7 +17,7 @@ function getRecruitments(request, reply){
 }
 
 function getRecruitment(request, reply){
-  recruitments.findOne({recruitmentId:request.params.recruitmentId}, function (err, data) {
+  recruitments.findOne({jobid:parseInt(request.params.jobid, 10)}, function (err, data) {
     if(err){
       reply(err)
     } else {
