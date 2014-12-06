@@ -7,7 +7,9 @@ var message = {
       journals: "/journals",
       journal: "/journal/<journalId>",
       municipalities: "/municipalities",
-      municipality: "municipality/<municipalityId>"
+      municipality: "municipality/<municipalityId>",
+      recruitments: "/recruitments",
+      recruitment: "recruitment/<recruitmentId>"
     }
   ;
 
