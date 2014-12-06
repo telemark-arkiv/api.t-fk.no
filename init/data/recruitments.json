@@ -1,0 +1,67 @@
+[
+  {
+    "jobid" : 2398,
+    "companyName" : "Telemark fylkeskommune",
+    "locationId" : 55,
+    "locationName" : "Nome videregående skole",
+    "published" : "2014-11-21",
+    "deadline" : "2014-12-11",
+    "title" : "Undervisningsstilling i engelsk v/Nome vgs. avd. Lunde",
+    "link" : "https://hrm.btvregion.no/tfk_recruitment/jobid/2398",
+    "positionType" : "Tidsavgrenset"
+  },
+  { "jobid" : 2399,
+    "companyName" : "Telemark fylkeskommune",
+    "locationId" : 55,
+    "locationName" : "Nome videregående skole",
+    "published" : "2014-11-21",
+    "deadline" : "2014-12-11",
+    "title" : "Undervisningsstilling i kroppsøving v/Nome vgs. avd. Lunde",
+    "link" : "https://hrm.btvregion.no/tfk_recruitment/jobid/2399",
+    "positionType" : "Vikar"
+  },
+  {
+    "jobid" : 2401,
+    "companyName" : "Telemark fylkeskommune",
+    "locationId" : 17,
+    "locationName" : "Den offentlege tannhelsetenesta",
+    "published" : "2014-11-21",
+    "deadline" : "2014-12-08",
+    "title" : "Tannhelsesekretær - 100% fast stilling",
+    "link" : "https://hrm.btvregion.no/tfk_recruitment/jobid/2401",
+    "positionType" : "Fast ansatt"
+  },
+  {
+    "jobid" : 2402,
+    "companyName" : "Telemark fylkeskommune",
+    "locationId" : 17,
+    "locationName" : "Den offentlege tannhelsetenesta",
+    "published" : "2014-11-21",
+    "deadline" : "2014-12-08",
+    "title" : "Tannhelsesekretær - 100% midlertidig stilling",
+    "link" : "https://hrm.btvregion.no/tfk_recruitment/jobid/2402",
+    "positionType" : "Tidsavgrenset"
+  },
+  {
+    "jobid" : 2394,
+    "companyName" : "Telemark fylkeskommune",
+    "locationId" : 1,
+    "locationName" : "Fylkesadministrasjonen",
+    "published" : "2014-11-19",
+    "deadline" : "2014-12-08",
+    "title" : "Prosjektleder - lærlingordning tilpasset varehandel",
+    "link" : "https://hrm.btvregion.no/tfk_recruitment/jobid/2394",
+    "positionType" : "Tidsavgrenset"
+  },
+  {
+    "jobid" : 2396,
+    "companyName" : "Telemark fylkeskommune",
+    "locationId" : 17,
+    "locationName" : "Den offentlege tannhelsetenesta",
+    "published" : "2014-11-18",
+    "deadline" : "2014-12-11",
+    "title" : "Psykolog Tannhelse",
+    "link" : "https://hrm.btvregion.no/tfk_recruitment/jobid/2396",
+    "positionType" : "Fast ansatt"
+  }
+]
