@@ -16,6 +16,10 @@ var fs = require('fs')
     {
       "db":DB.collection('journals'),
       "file": "init/data/journals.json"
+    },
+    {
+      "db":DB.collection('recruitments'),
+      "file": "init/data/recruitments.json"
     }
   ]
   ;
