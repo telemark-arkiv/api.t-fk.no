@@ -21,7 +21,7 @@
     "init-dev": "node 'init/index.js'"
   },
   "dependencies": {
-    "hapi": "^7.2.0",
+    "hapi": "^7.5.2",
     "mongojs": "^0.15.1"
   },
   "devDependencies": {
