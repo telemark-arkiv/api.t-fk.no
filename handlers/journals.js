@@ -38,8 +38,21 @@ function getJournal(request, reply){
   });
 }
 
+function getJournalLatest(request, reply){
+  journals.find().sort({"JOURNPOST_OJ.JP_JDATO":1}).limt(1), function (err, data) {
+    if(err){
+      reply(err)
+    } else {
+      reply(data);
+    }
+  });
+}
+
+
 module.exports.getJournals = getJournals;
 
 module.exports.getJournalsByDate = getJournalsByDate;
 
 module.exports.getJournal = getJournal;
+
+module.exports.getJournalLatest = getJournalLatest;
