@@ -2,9 +2,10 @@
 
 var request = require('supertest')
   , server = require('../server')
+  , config = require('../config')
   ;
 
-request = request('http://localhost:3000');
+request = request('http://localhost:' + config.SERVER_PORT);
 
 describe('Server journals', function () {
 
@@ -20,6 +21,16 @@ describe('Server journals', function () {
     it('respond with json', function(done){
       request
         .get('/journals')
+        .set('Accept', 'application/json')
+        .expect('Content-Type', /json/)
+        .expect(200, done);
+    })
+  });
+
+  describe('GET /journals/20141016', function(){
+    it('respond with json', function(done){
+      request
+        .get('/journals/20141016')
         .set('Accept', 'application/json')
         .expect('Content-Type', /json/)
         .expect(200, done);

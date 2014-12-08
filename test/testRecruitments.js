@@ -2,9 +2,10 @@
 
 var request = require('supertest')
   , server = require('../server')
+  , config = require('../config')
   ;
 
-request = request('http://localhost:3000');
+request = request('http://localhost:' + config.SERVER_PORT);
 
 describe('Server recruitments', function () {
 

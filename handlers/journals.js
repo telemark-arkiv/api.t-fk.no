@@ -40,4 +40,6 @@ function getJournal(request, reply){
 
 module.exports.getJournals = getJournals;
 
+module.exports.getJournalsByDate = getJournalsByDate;
+
 module.exports.getJournal = getJournal;
