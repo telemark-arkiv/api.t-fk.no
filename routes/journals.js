@@ -18,7 +18,7 @@ routes = [
   {
     method: 'GET',
     path: '/journals/latest',
-    handler: handlers.getJournalLatest
+    handler: handlers.getLatestJournals
   },
   {
     method: 'GET',
