@@ -39,7 +39,7 @@ function getJournal(request, reply){
 }
 
 function getJournalLatest(request, reply){
-  journals.find().sort({"JOURNPOST_OJ.JP_JDATO":1}).limt(1, function (err, data) {
+  journals.find().sort({"JOURNPOST_OJ.JP_JDATO":-1}).limit(1, function (err, data) {
     if(err){
       reply(err)
     } else {
