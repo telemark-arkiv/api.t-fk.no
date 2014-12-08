@@ -9,9 +9,9 @@ var message = {
       journalsLatest: "/journals/latest",
       journal: "/journal/<journalId>",
       municipalities: "/municipalities",
-      municipality: "municipality/<municipalityId>",
+      municipality: "/municipality/<municipalityId>",
       recruitments: "/recruitments",
-      recruitment: "recruitment/<recruitmentId>"
+      recruitment: "/recruitment/<recruitmentId>"
     }
   ;
 
