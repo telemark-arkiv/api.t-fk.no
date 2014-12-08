@@ -6,6 +6,21 @@ var mongojs = require('mongojs')
   , journals = db.collection('journals')
   ;
 
+
+function getLatestJournalDate(cb){
+  journals.find().sort({"JOURNPOST_OJ.JP_JDATO":-1}).limit(1, function (err, data) {
+    if(err){
+      return cb(err, null);
+    } else {
+      if(data){
+        return cb(null, {date: data[0].JOURNPOST_OJ.JP_JDATO})
+      } else {
+        return cb(null, data);
+      }
+    }
+  });
+}
+
 function getJournals(request, reply){
   journals.find(request.query, function (err, data) {
     if(err){
@@ -38,12 +53,24 @@ function getJournal(request, reply){
   });
 }
 
-function getJournalLatest(request, reply){
-  journals.find().sort({"JOURNPOST_OJ.JP_JDATO":-1}).limit(1, function (err, data) {
-    if(err){
-      reply(err)
+function getLatestJournals(request, reply){
+  getLatestJournalDate(function(error, date){
+    if(error){
+      reply(error)
     } else {
-      reply(data);
+      if(date.date){
+        var journalDate = parseInt(date.date, 10)
+          ;
+        journals.find({"JOURNPOST_OJ.JP_JDATO":journalDate}, function (err, data) {
+          if(err){
+            reply(err);
+          } else {
+            reply(data)
+          }
+        });
+      } else {
+        reply([]);
+      }
     }
   });
 }
@@ -55,4 +82,4 @@ module.exports.getJournalsByDate = getJournalsByDate;
 
 module.exports.getJournal = getJournal;
 
-module.exports.getJournalLatest = getJournalLatest;
+module.exports.getLatestJournals = getLatestJournals;
