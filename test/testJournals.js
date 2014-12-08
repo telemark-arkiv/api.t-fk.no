@@ -27,7 +27,7 @@ describe('Server journals', function () {
     })
   });
 
-  describe('GET /journals/20141016', function(){
+  describe('GET /journals/date/20141016', function(){
     it('respond with json', function(done){
       request
         .get('/journals/20141016')
