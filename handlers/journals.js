@@ -16,6 +16,18 @@ function getJournals(request, reply){
   });
 }
 
+function getJournalsByDate(request, reply){
+  var journalDate = parseInt(request.params.date, 10)
+    ;
+  journals.find({"JOURNPOST_OJ.JP_JDATO":journalDate}, function (err, data) {
+    if(err){
+      reply(err);
+    } else {
+      reply(data)
+    }
+  });
+}
+
 function getJournal(request, reply){
   journals.findOne({sakId:request.params.sakId}, function (err, data) {
     if(err){
@@ -25,7 +37,6 @@ function getJournal(request, reply){
     }
   });
 }
-
 
 module.exports.getJournals = getJournals;
 
