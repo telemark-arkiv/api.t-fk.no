@@ -44,7 +44,7 @@ function getJournalsByDate(request, reply){
 }
 
 function getJournal(request, reply){
-  journals.findOne({sakId:request.params.sakId}, function (err, data) {
+  journals.find({sakId:request.params.sakId}, function (err, data) {
     if(err){
       reply(err)
     } else {
