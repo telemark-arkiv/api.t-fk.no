@@ -384,5 +384,100 @@
         }
       ]
     }
+  },
+  {
+    "sakId":"2014_100",
+    "SA_SAAR":2014,
+    "SA_SEKNR":100,
+    "SA_SAKNR":"14/00100",
+    "SA_OFFTITTEL": "Høring - forslag om endringer i forskrift om opptak til høyere utdanning",
+    "SA_ADMKORT":"Seksjon for kvalitet og utvikling",
+    "SA_ANSVINIT":"myhn",
+    "KLASSERING_OJ": [
+      {
+        "KL_ORDNVERDI":"---",
+        "KL_SORT":1,
+        "KL_OPLTEKST":"---"
+      }
+    ],
+    "JOURNPOST_OJ" : {
+      "JP_JAAR":2014,
+      "JP_SEKNR":400,
+      "JP_DOKNR":"14/00100-1",
+      "JP_POSTNR":1,
+      "JP_JDATO":20141017,
+      "JP_NDOKTYPE":"I",
+      "JP_DOKDATO":20141004,
+      "JP_OFFINNHOLD":"Høringsbrev - forslag om endringer i forskrift om opptak til høyere utdanning",
+      "JP_TGKODE":"Ugradert",
+      "JP_TGVERDI":0,
+      "JP_ANSVAVD":"Seksjon for kvalitet og utvikling",
+      "AVSMOT_OJ" : {
+        "AM_NAVN":"Det kongelige kunnskapsdepartementet",
+        "AM_IHTYPE":0
+      },
+      "JP_DOKUMENTER": [
+        {
+          "DL_RNR":1,
+          "DL_DOKID":203500,
+          "DL_TYPE":"H",
+          "DOKBESKRIV_OJ":{
+            "DB_TITTEL":"Høringsbrev - forslag om endringer i forskrift om opptak til høyere utdanning (L)(8.pdf",
+            "DB_TGKODE":"Ugradert",
+            "DB_TGVERDI":0,
+            "DOKVERSJON_OJ": {
+              "VE_VERSJON":1,
+              "VE_VARIANT":"A",
+              "VE_FILREF":"203500_1_1.PDF"
+            }
+          }
+        },
+        {
+          "DL_RNR":2,
+          "DL_DOKID":203501,
+          "DL_TYPE":"V",
+          "DOKBESKRIV_OJ":{
+            "DB_TITTEL":"§4-7 opptakskrav i matematikk.docx (L)(839737).pdf",
+            "DB_TGKODE":"Ugradert",
+            "DB_TGVERDI":0,
+            "DOKVERSJON_OJ": {
+              "VE_VERSJON":1,
+              "VE_VARIANT":"A",
+              "VE_FILREF":"203501_1_1.PDF"
+            }
+          }
+        },
+        {
+          "DL_RNR":3,
+          "DL_DOKID":203502,
+          "DL_TYPE":"V",
+          "DOKBESKRIV_OJ":{
+            "DB_TITTEL":"Høringer-rundskriv -Adressater.docx (L)(842204).pdf",
+            "DB_TGKODE":"Ugradert",
+            "DB_TGVERDI":0,
+            "DOKVERSJON_OJ": {
+              "VE_VERSJON":1,
+              "VE_VARIANT":"A",
+              "VE_FILREF":"203503_1_1.PDF"
+            }
+          }
+        },
+        {
+          "DL_RNR":4,
+          "DL_DOKID":203503,
+          "DL_TYPE":"V",
+          "DOKBESKRIV_OJ":{
+            "DB_TITTEL":"Høringsbrev - forslag om endringer i forskrift om opptak til høyere utdanning.msg",
+            "DB_TGKODE":"Ugradert",
+            "DB_TGVERDI":0,
+            "DOKVERSJON_OJ": {
+              "VE_VERSJON":1,
+              "VE_VARIANT":"A",
+              "VE_FILREF":"203503_1_1.PDF"
+            }
+          }
+        }
+      ]
+    }
   }
 ]
