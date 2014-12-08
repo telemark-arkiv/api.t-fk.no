@@ -17,6 +17,11 @@ routes = [
   },
   {
     method: 'GET',
+    path: '/journals/latest',
+    handler: handlers.getJournalLatest
+  },
+  {
+    method: 'GET',
     path: '/journal/{sakId}',
     handler: handlers.getJournal
   }
