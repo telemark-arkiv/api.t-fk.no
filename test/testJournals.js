@@ -37,6 +37,16 @@ describe('Server journals', function () {
     })
   });
 
+  describe('GET /journals/latest', function(){
+    it('respond with json', function(done){
+      request
+        .get('/journals/latest')
+        .set('Accept', 'application/json')
+        .expect('Content-Type', /json/)
+        .expect(200, done);
+    })
+  });
+
   describe('GET /journals/2014_65', function(){
     it('respond with json', function(done){
       request
