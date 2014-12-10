@@ -27,6 +27,16 @@ describe('Server journals', function () {
     })
   });
 
+  describe('GET /journals/date/distinct', function(){
+    it('respond with json', function(done){
+      request
+        .get('/journals/date/distinct')
+        .set('Accept', 'application/json')
+        .expect('Content-Type', /json/)
+        .expect(200, done);
+    })
+  });
+
   describe('GET /journals/date/20141016', function(){
     it('respond with json', function(done){
       request
