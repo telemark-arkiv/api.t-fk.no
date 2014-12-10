@@ -43,6 +43,16 @@ function getJournalsByDate(request, reply){
   });
 }
 
+function getJournalsDatesDistinct(request, reply){
+  journals.distinct("JOURNPOST_OJ.JP_JDATO", function (err, data) {
+    if(err){
+      reply(err);
+    } else {
+      reply(data)
+    }
+  });
+}
+
 function getJournal(request, reply){
   journals.find({sakId:request.params.sakId}, function (err, data) {
     if(err){
@@ -79,6 +89,8 @@ function getLatestJournals(request, reply){
 module.exports.getJournals = getJournals;
 
 module.exports.getJournalsByDate = getJournalsByDate;
+
+module.exports.getJournalsDatesDistinct = getJournalsDatesDistinct;
 
 module.exports.getJournal = getJournal;
 
