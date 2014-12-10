@@ -5,6 +5,7 @@ var message = {
       departments: "/departments",
       department: "/department/<departmentId>",
       journals: "/journals",
+      journalsByDateDistinct: "/journals/date/distinct",
       journalsByDate: "/journals/date/<yyyymmdd>",
       journalsLatest: "/journals/latest",
       journal: "/journal/<journalId>",
