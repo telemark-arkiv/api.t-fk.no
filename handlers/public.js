@@ -7,6 +7,7 @@ var message = {
       journals: "/journals",
       journalsByDateDistinct: "/journals/date/distinct",
       journalsByDate: "/journals/date/<yyyymmdd>",
+      journalsCollection: "/journals/collection/<saSeknr>",
       journalsLatest: "/journals/latest",
       journal: "/journal/<jpSeknr>",
       municipalities: "/municipalities",
