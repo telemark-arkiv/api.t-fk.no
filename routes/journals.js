@@ -12,6 +12,11 @@ routes = [
   },
   {
     method: 'GET',
+    path: '/journals/collection/{saSeknr}',
+    handler: handlers.getJournalsCollection
+  },
+  {
+    method: 'GET',
     path: '/journals/date/distinct',
     handler: handlers.getJournalsDatesDistinct
   },
