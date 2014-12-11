@@ -53,6 +53,17 @@ function getJournalsDatesDistinct(request, reply){
   });
 }
 
+function getJournalsCollection(request, reply){
+  var saSeknr = parseInt(request.params.saSeknr, 10);
+  journals.find({"SA_SEKNR":saSeknr}, function (err, data) {
+    if(err){
+      reply(err)
+    } else {
+      reply(data);
+    }
+  });
+}
+
 function getJournal(request, reply){
   var jpSeknr = parseInt(request.params.jpSeknr, 10);
   journals.find({"JOURNPOST_OJ.JP_SEKNR":jpSeknr}, function (err, data) {
@@ -92,6 +103,8 @@ module.exports.getJournals = getJournals;
 module.exports.getJournalsByDate = getJournalsByDate;
 
 module.exports.getJournalsDatesDistinct = getJournalsDatesDistinct;
+
+module.exports.getJournalsCollection = getJournalsCollection;
 
 module.exports.getJournal = getJournal;
 
