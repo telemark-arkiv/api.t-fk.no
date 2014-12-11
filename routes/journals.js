@@ -27,7 +27,7 @@ routes = [
   },
   {
     method: 'GET',
-    path: '/journal/{jsSeknr}',
+    path: '/journal/{jpSeknr}',
     handler: handlers.getJournal
   }
 ]
