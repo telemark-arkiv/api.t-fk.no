@@ -47,6 +47,16 @@ describe('Server journals', function () {
     })
   });
 
+  describe('GET /journals/collection/65', function(){
+    it('respond with json', function(done){
+      request
+        .get('/journals/collection/65')
+        .set('Accept', 'application/json')
+        .expect('Content-Type', /json/)
+        .expect(200, done);
+    })
+  });
+
   describe('GET /journals/latest', function(){
     it('respond with json', function(done){
       request
