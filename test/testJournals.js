@@ -57,10 +57,10 @@ describe('Server journals', function () {
     })
   });
 
-  describe('GET /journals/2014_65', function(){
+  describe('GET /journal/211', function(){
     it('respond with json', function(done){
       request
-        .get('/journal/2014_65')
+        .get('/journal/211')
         .set('Accept', 'application/json')
         .expect('Content-Type', /json/)
         .expect(200, done);
