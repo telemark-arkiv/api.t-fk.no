@@ -54,7 +54,7 @@ function getJournalsDatesDistinct(request, reply){
 }
 
 function getJournal(request, reply){
-  journals.find({sakId:request.params.sakId}, function (err, data) {
+  journals.find({"JOURNPOST_OJ.JP_SEKNR":request.params.jpSeknr}, function (err, data) {
     if(err){
       reply(err)
     } else {
