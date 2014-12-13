@@ -47,6 +47,16 @@ describe('Server journals', function () {
     })
   });
 
+  describe('GET /journals/department/Seksjon for kvalitet og utvikling', function(){
+    it('respond with json', function(done){
+      request
+        .get('/journals/department/Seksjon for kvalitet og utvikling')
+        .set('Accept', 'application/json')
+        .expect('Content-Type', /json/)
+        .expect(200, done);
+    })
+  });
+
   describe('GET /journals/collection/65', function(){
     it('respond with json', function(done){
       request

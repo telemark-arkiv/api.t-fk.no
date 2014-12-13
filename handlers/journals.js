@@ -43,6 +43,18 @@ function getJournalsByDate(request, reply){
   });
 }
 
+function getJournalsByDate(request, reply){
+  var journalDate = parseInt(request.params.date, 10)
+    ;
+  journals.find({"JOURNPOST_OJ.JP_JDATO":journalDate}, function (err, data) {
+    if(err){
+      reply(err);
+    } else {
+      reply(data)
+    }
+  });
+}
+
 function getJournalsDatesDistinct(request, reply){
   journals.distinct("JOURNPOST_OJ.JP_JDATO", function (err, data) {
     if(err){
