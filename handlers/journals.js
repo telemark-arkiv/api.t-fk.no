@@ -43,10 +43,10 @@ function getJournalsByDate(request, reply){
   });
 }
 
-function getJournalsByDate(request, reply){
-  var journalDate = parseInt(request.params.date, 10)
+function getJournalsByDepartment(request, reply){
+  var department = request.params.department;
     ;
-  journals.find({"JOURNPOST_OJ.JP_JDATO":journalDate}, function (err, data) {
+  journals.find({"JOURNPOST_OJ.JP_ANSVAVD":department}, function (err, data) {
     if(err){
       reply(err);
     } else {
@@ -115,6 +115,8 @@ module.exports.getJournals = getJournals;
 module.exports.getJournalsByDate = getJournalsByDate;
 
 module.exports.getJournalsDatesDistinct = getJournalsDatesDistinct;
+
+module.exports.getJournalsByDepartment = getJournalsByDepartment;
 
 module.exports.getJournalsCollection = getJournalsCollection;
 
