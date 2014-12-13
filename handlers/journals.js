@@ -44,9 +44,14 @@ function getJournalsByDate(request, reply){
 }
 
 function getJournalsByDepartment(request, reply){
-  var department = request.params.department;
+  var q = {"JOURNPOST_OJ.JP_ANSVAVD":request.params.department}
     ;
-  journals.find({"JOURNPOST_OJ.JP_ANSVAVD":department}, function (err, data) {
+  if(request.query.date){
+    var journalDate = parseInt(request.query.date, 10)
+      ;
+    q["JOURNPOST_OJ.JP_JDATO"] = journalDate;
+  }
+  journals.find(q, function (err, data) {
     if(err){
       reply(err);
     } else {

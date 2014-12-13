@@ -57,6 +57,16 @@ describe('Server journals', function () {
     })
   });
 
+  describe('GET /journals/department/Seksjon for kvalitet og utvikling?date=20141016', function(){
+    it('respond with json', function(done){
+      request
+        .get('/journals/department/Seksjon for kvalitet og utvikling?date=20141016')
+        .set('Accept', 'application/json')
+        .expect('Content-Type', /json/)
+        .expect(200, done);
+    })
+  });
+
   describe('GET /journals/collection/65', function(){
     it('respond with json', function(done){
       request
