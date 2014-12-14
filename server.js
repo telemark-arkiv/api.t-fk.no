@@ -7,7 +7,8 @@ var Hapi = require('hapi')
   ;
 
 server.connection({
-  port:config.SERVER_PORT
+  port:config.SERVER_PORT,
+  routes:{cors:true}
 });
 
 server.route(routes);

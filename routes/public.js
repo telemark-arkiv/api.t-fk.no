@@ -8,10 +8,7 @@ routes = [
   {
     method: 'GET',
     path: '/',
-    handler: handlers.getPublicResponse,
-    config: {
-      cors:true
-    }
+    handler: handlers.getPublicResponse
   }
 ]
 

@@ -8,18 +8,12 @@ routes = [
   {
     method: 'GET',
     path: '/municipalities',
-    handler: handlers.getMunicipalities,
-    config: {
-      cors:true
-    }
+    handler: handlers.getMunicipalities
   },
   {
     method: 'GET',
     path: '/municipality/{municipalityId}',
-    handler: handlers.getMunicipality,
-    config: {
-      cors:true
-    }
+    handler: handlers.getMunicipality
   }
 ]
 
