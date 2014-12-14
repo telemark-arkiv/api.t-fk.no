@@ -8,12 +8,18 @@ routes = [
   {
     method: 'GET',
     path: '/recruitments',
-    handler: handlers.getRecruitments
+    handler: handlers.getRecruitments,
+    config: {
+      cors:true
+    }
   },
   {
     method: 'GET',
     path: '/recruitment/{jobid}',
-    handler: handlers.getRecruitment
+    handler: handlers.getRecruitment,
+    config: {
+      cors:true
+    }
   }
 ]
 

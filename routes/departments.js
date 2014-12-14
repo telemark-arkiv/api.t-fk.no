@@ -13,7 +13,10 @@ routes = [
   {
     method: 'GET',
     path: '/department/{departmentId}',
-    handler: handlers.getDepartment
+    handler: handlers.getDepartment,
+    config: {
+      cors:true
+    }
   }
 ]
 

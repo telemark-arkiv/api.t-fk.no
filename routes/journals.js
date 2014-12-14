@@ -8,37 +8,58 @@ routes = [
   {
     method: 'GET',
     path: '/journals',
-    handler: handlers.getJournals
+    handler: handlers.getJournals,
+    config: {
+      cors:true
+    }
   },
   {
     method: 'GET',
     path: '/journals/collection/{saSeknr}',
-    handler: handlers.getJournalsCollection
+    handler: handlers.getJournalsCollection,
+    config: {
+      cors:true
+    }
   },
   {
     method: 'GET',
     path: '/journals/date/distinct',
-    handler: handlers.getJournalsDatesDistinct
+    handler: handlers.getJournalsDatesDistinct,
+    config: {
+      cors:true
+    }
   },
   {
     method: 'GET',
     path: '/journals/date/{date}',
-    handler: handlers.getJournalsByDate
+    handler: handlers.getJournalsByDate,
+    config: {
+      cors:true
+    }
   },
   {
     method: 'GET',
     path: '/journals/department/{department}',
-    handler: handlers.getJournalsByDepartment
+    handler: handlers.getJournalsByDepartment,
+    config: {
+      cors:true
+    }
   },
   {
     method: 'GET',
     path: '/journals/latest',
-    handler: handlers.getLatestJournals
+    handler: handlers.getLatestJournals,
+    config: {
+      cors:true
+    }
   },
   {
     method: 'GET',
     path: '/journal/{jpSeknr}',
-    handler: handlers.getJournal
+    handler: handlers.getJournal,
+    config: {
+      cors:true
+    }
   }
 ]
 
