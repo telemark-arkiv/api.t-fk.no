@@ -8,6 +8,7 @@ var message = {
       journalsByDateDistinct: "/journals/date/distinct",
       journalsByDate: "/journals/date/<yyyymmdd>",
       journalsByDepartment: "/journals/department/<departmentName>[?date=<yyyymmdd>]",
+      journalsByDepartmentDistinct: "/journals/department/distinct",
       journalsCollection: "/journals/collection/<saSeknr>",
       journalsLatest: "/journals/latest",
       journal: "/journal/<jpSeknr>",
