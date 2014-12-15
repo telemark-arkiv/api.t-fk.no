@@ -43,6 +43,16 @@ function getJournalsByDate(request, reply){
   });
 }
 
+function getJournalsByDepartmentDistinct(request, reply){
+  journals.distinct("JOURNPOST_OJ.JP_ANSVAVD", function (err, data) {
+    if(err){
+      reply(err);
+    } else {
+      reply(data)
+    }
+  });
+}
+
 function getJournalsByDepartment(request, reply){
   var q = {"JOURNPOST_OJ.JP_ANSVAVD":request.params.department}
     ;
@@ -122,6 +132,8 @@ module.exports.getJournalsByDate = getJournalsByDate;
 module.exports.getJournalsDatesDistinct = getJournalsDatesDistinct;
 
 module.exports.getJournalsByDepartment = getJournalsByDepartment;
+
+module.exports.getJournalsByDepartmentDistinct = getJournalsByDepartmentDistinct;
 
 module.exports.getJournalsCollection = getJournalsCollection;
 

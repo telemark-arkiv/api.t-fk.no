@@ -27,6 +27,11 @@ routes = [
   },
   {
     method: 'GET',
+    path: '/journals/department/distinct',
+    handler: handlers.getJournalsByDepartmentDistinct
+  },
+  {
+    method: 'GET',
     path: '/journals/department/{department}',
     handler: handlers.getJournalsByDepartment
   },
