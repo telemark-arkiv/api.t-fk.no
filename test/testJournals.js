@@ -1,18 +1,22 @@
 'use strict'
 
-var request = require('supertest')
-  , crypto = require('browserify-cryptojs')
+var crypto = require('crypto')
+  , request = require('supertest')
   , server = require('../server')
   , config = require('../config')
   ;
 
 function encryptPhrase(phrase){
-  var passphrase = 'SoylentGreenIsPeople';
-  var encrypted = crypto.AES.encrypt(passphrase, passphrase).toString();
+  var password = 'SoylentGreenIsPeople';
+  var cipher = crypto.createCipher('aes192', password);
 
+  var encrypted = cipher.update(phrase, 'utf8', 'hex');
+
+  encrypted += cipher.final('hex');
+
+  console.log(encrypted);
   return encrypted;
 }
-
 
 request = request('http://localhost:' + config.SERVER_PORT);
 
@@ -79,8 +83,9 @@ describe('Server journals', function () {
 
   describe('GET /journals/department/Seksjon for kvalitet og utvikling?date=20141016', function(){
     it('respond with json', function(done){
+      var department = encryptPhrase('Seksjon for kvalitet og utvikling');
       request
-        .get('/journals/department/Seksjon for kvalitet og utvikling?date=20141016')
+        .get('/journals/department/' + department + '?date=20141016')
         .set('Accept', 'application/json')
         .expect('Content-Type', /json/)
         .expect(200, done);

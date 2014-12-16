@@ -1,16 +1,19 @@
 'use strict';
 
-var mongojs = require('mongojs')
-  , crypto = require('browserify-cryptojs')
+var crypto = require('crypto')
+  , mongojs = require('mongojs')
   , config = require('../config')
   , db = mongojs(config.DB)
   , journals = db.collection('journals')
   ;
 
-function decryptPhrase(encrypted){
-  var passphrase = 'SoylentGreenIsPeople';
-  var decrypted = crypto.AES.decrypt(encrypted, passphrase).toString();
 
+function decryptPhrase(phrase){
+  var password = 'SoylentGreenIsPeople';
+  var decipher = crypto.createDecipher('aes192', password)
+  var decrypted = decipher.update(phrase, 'hex', 'utf8');
+
+  decrypted += decipher.final('utf-8');
   return decrypted;
 }
 
@@ -64,6 +67,7 @@ function getJournalsByDepartment(request, reply){
   var department = decryptPhrase(request.params.department)
     , q = {"JOURNPOST_OJ.JP_ANSVAVD":department}
     ;
+
   if(request.query.date){
     var journalDate = parseInt(request.query.date, 10)
       ;
