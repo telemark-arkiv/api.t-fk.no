@@ -10,7 +10,7 @@ var crypto = require('crypto')
 
 function decryptPhrase(phrase){
   var password = 'SoylentGreenIsPeople';
-  var decipher = crypto.createDecipher('aes192', password)
+  var decipher = crypto.createDecipher('aes192', password);
   var decrypted = decipher.update(phrase, 'hex', 'utf8');
 
   decrypted += decipher.final('utf-8');

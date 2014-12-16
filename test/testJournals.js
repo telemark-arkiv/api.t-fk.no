@@ -14,7 +14,6 @@ function encryptPhrase(phrase){
 
   encrypted += cipher.final('hex');
 
-  console.log(encrypted);
   return encrypted;
 }
 
