@@ -1,11 +1,18 @@
 'use strict';
 
 var mongojs = require('mongojs')
+  , crypto = require('browserify-cryptojs')
   , config = require('../config')
   , db = mongojs(config.DB)
   , journals = db.collection('journals')
   ;
 
+function decryptPhrase(encrypted){
+  var passphrase = 'SoylentGreenIsPeople';
+  var decrypted = crypto.AES.decrypt(encrypted, passphrase).toString();
+
+  return decrypted;
+}
 
 function getLatestJournalDate(cb){
   journals.find().sort({"JOURNPOST_OJ.JP_JDATO":-1}).limit(1, function (err, data) {
@@ -54,7 +61,8 @@ function getJournalsByDepartmentDistinct(request, reply){
 }
 
 function getJournalsByDepartment(request, reply){
-  var q = {"JOURNPOST_OJ.JP_ANSVAVD":request.params.department}
+  var department = decryptPhrase(request.params.department)
+    , q = {"JOURNPOST_OJ.JP_ANSVAVD":department}
     ;
   if(request.query.date){
     var journalDate = parseInt(request.query.date, 10)
