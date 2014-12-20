@@ -1,21 +1,11 @@
 'use strict';
 
-var crypto = require('crypto')
-  , mongojs = require('mongojs')
+var mongojs = require('mongojs')
+  , cipher = require('../lib/cipher')
   , config = require('../config')
   , db = mongojs(config.DB)
   , journals = db.collection('journals')
   ;
-
-
-function decryptPhrase(phrase){
-  var password = 'SoylentGreenIsPeople';
-  var decipher = crypto.createDecipher('aes192', password);
-  var decrypted = decipher.update(phrase, 'hex', 'utf8');
-
-  decrypted += decipher.final('utf-8');
-  return decrypted;
-}
 
 function getLatestJournalDate(cb){
   journals.find().sort({"JOURNPOST_OJ.JP_JDATO":-1}).limit(1, function (err, data) {
@@ -64,7 +54,7 @@ function getJournalsByDepartmentDistinct(request, reply){
 }
 
 function getJournalsByDepartment(request, reply){
-  var department = decryptPhrase(request.params.department)
+  var department = cipher.decrypt(request.params.department)
     , q = {"JOURNPOST_OJ.JP_ANSVAVD":department}
     ;
 
