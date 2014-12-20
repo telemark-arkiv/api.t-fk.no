@@ -1,21 +1,10 @@
 'use strict'
 
-var crypto = require('crypto')
-  , request = require('supertest')
+var request = require('supertest')
+  , cipher = require('../lib/cipher')
   , server = require('../server')
   , config = require('../config')
   ;
-
-function encryptPhrase(phrase){
-  var password = 'SoylentGreenIsPeople';
-  var cipher = crypto.createCipher('aes192', password);
-
-  var encrypted = cipher.update(phrase, 'utf8', 'hex');
-
-  encrypted += cipher.final('hex');
-
-  return encrypted;
-}
 
 request = request('http://localhost:' + config.SERVER_PORT);
 
@@ -71,7 +60,7 @@ describe('Server journals', function () {
 
   describe('GET /journals/department/Seksjon for kvalitet og utvikling', function(){
     it('respond with json', function(done){
-      var department = encryptPhrase('Seksjon for kvalitet og utvikling');
+      var department = cipher.encrypt('Seksjon for kvalitet og utvikling');
       request
         .get('/journals/department/'+department)
         .set('Accept', 'application/json')
@@ -82,7 +71,7 @@ describe('Server journals', function () {
 
   describe('GET /journals/department/Seksjon for kvalitet og utvikling?date=20141016', function(){
     it('respond with json', function(done){
-      var department = encryptPhrase('Seksjon for kvalitet og utvikling');
+      var department = cipher.encrypt('Seksjon for kvalitet og utvikling');
       request
         .get('/journals/department/' + department + '?date=20141016')
         .set('Accept', 'application/json')
