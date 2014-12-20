@@ -19,5 +19,14 @@ describe('Cipher', function () {
     })
   });
 
+  describe('decrypt', function(done){
+    it('decrypts correct', function(done){
+      var decrypted = cipher.decrypt(encryptedPhrase)
+        ;
+
+      assert.equal(decrypted, decryptedPhrase);
+      done();
+    })
+  });
 
 });
