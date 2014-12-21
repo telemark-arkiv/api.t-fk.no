@@ -1,7 +1,7 @@
 'use strict';
 
 var mongojs = require('mongojs')
-  , cipher = require('../lib/cipher')
+  , cipher = require('util-api-cipher')
   , config = require('../config')
   , db = mongojs(config.DB)
   , journals = db.collection('journals')

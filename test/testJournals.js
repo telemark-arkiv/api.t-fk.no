@@ -1,7 +1,7 @@
 'use strict'
 
 var request = require('supertest')
-  , cipher = require('../lib/cipher')
+  , cipher = require('util-api-cipher')
   , server = require('../server')
   , config = require('../config')
   ;
