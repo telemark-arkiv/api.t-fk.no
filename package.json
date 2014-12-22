@@ -23,7 +23,7 @@
   "dependencies": {
     "hapi": "^8.0.0",
     "mongojs": "^0.15.1",
-    "util-api-cipher": "git+ssh://git@github.com/telemark/util-api-cipher.git"
+    "util-api-cipher": "git+https://github.com/telemark/util-api-cipher.git"
   },
   "devDependencies": {
     "jsdoc": "^3.3.0-alpha10",
