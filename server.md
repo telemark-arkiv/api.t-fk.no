@@ -42,31 +42,27 @@ sudo apt-get install nginx
 
 # api.t-fk.no
 server {
-
     listen 443 ssl;
-
     server_name api.t-fk.no;
-
     ssl_certificate /etc/nginx/ssl/ssl-bundle.crt;
-
     ssl_certificate_key /etc/nginx/ssl/wildcard.key;
+    
+    # Enables gzip
+    gzip_vary on;
+    gzip_proxied any;
+    gzip_comp_level 6;
+    gzip_buffers 16 8k;
+    gzip_http_version 1.1;
+    gzip_types text/plain text/css application/json application/x-javascript text/xml application/xml ap$
 
     location / {
-
         proxy_pass http://localhost:3000;
-
         proxy_http_version 1.1;
-
         proxy_set_header Upgrade $http_upgrade;
-
         proxy_set_header Connection 'upgrade';
-
         proxy_set_header Host $host;
-
         proxy_cache_bypass $http_upgrade;
-
     }
-
 }
 
 # postlister.t-fk.no
@@ -77,6 +73,7 @@ server {
     ssl_certificate_key /etc/nginx/ssl/wildcard.key;
     root /srv/ws/postlister/dist;
 
+    # Enables gzip
     gzip_vary on;
     gzip_proxied any;
     gzip_comp_level 6;
@@ -84,6 +81,7 @@ server {
     gzip_http_version 1.1;
     gzip_types text/plain text/css application/json application/x-javascript text/xml application/xml application/xml+rss text/javascript;
 
+    # Static expires
     location ~* \.(?:jpg|jpeg|gif|png|ico|cur|gz|svg|svgz|mp4|ogg|ogv|webm|htc|woff)$ {
       expires 7d;
       access_log off;
