@@ -8,13 +8,14 @@ sudo apt-get install -y mongodb-org
 sudo service mongod start
 ```
 
+## Install nodejs and forever
 ```
 curl -sL https://deb.nodesource.com/setup | sudo bash -
-sudo apt-get install nodejs
-apt-get install -y build-essential
+sudo apt-get install -y nodejs build-essential
 sudo npm -g install forever
 ```
 
+## Set permissions
 ```
 sudo groupadd ws
 mkdir /srv/ws
@@ -22,17 +23,7 @@ sudo chown -R $USERNAME:ws /srv/ws
 sudo usermod -a -G ws $USERNAME
 ```
 
-```
-git config --global user.email "mail@mail.com"
-git config --global user.name "username"
-```
-
-```
-ssh-keygen -t rsa -C "mail@mail.com"
-cat ~/.ssh/id_rsa.pub
-ssh -T git@github.com
-```
-
+## Clone repo
 ```
 git clone https://github.com/telemark/api.t-fk.no.git
 npm install
@@ -40,10 +31,12 @@ npm run-script init
 forever start --spinSleepTime 10000 index.js
 ```
 
+## Install nginx
 ```
 sudo apt-get install nginx
 ```
 
+## nginx config
 ```
 server {
 
@@ -74,29 +67,24 @@ server {
 }
 ```
 
+## Server config
+Set server i DMZ
 
-sette i DMZ
-
-sette opp /etc/network/interfaces
-
-
-sett opp dns
-api.t-fk.no -> root til api
-postlister.t-fk.no -> frotend til postlister
+Setup /etc/network/interfaces
+Setup DNS: api.t-fk.no
+Setup DNS: postlister.t-fk.no
 
 
 ## Brannmur
-Trenger porter mot github
+Ports for github
 outbound: 80/443/9418/22
 
-for å hente filer fra filserver
+To get files from fileserver
 outbound: cifs -> filserver
 
-for visma
+For visma webservices
 outbound: 8110 -> visma webserver
 
+Inbound
 inbound: 80/443/22/25
 
-sette opp node med https
-
-route med nginx
