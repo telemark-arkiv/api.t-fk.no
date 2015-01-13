@@ -1,8 +1,7 @@
 'use strict';
 
-var handlers = require('../handlers/public')
-  , routes
-  ;
+var handlers = require('../handlers/public');
+var routes;
 
 routes = [
   {
@@ -10,6 +9,6 @@ routes = [
     path: '/',
     handler: handlers.getPublicResponse
   }
-]
+];
 
 module.exports = routes;

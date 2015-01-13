@@ -1,12 +1,11 @@
-'use strict'
+'use strict';
 
-var publicRoutes = require('./public')
-  , municipalityRoutes = require('./municipalities')
-  , departmentRoutes = require('./departments')
-  , journalRoutes = require('./journals')
-  , recruitmentRoutes = require('./recruitments')
-  , routes = []
-  ;
+var publicRoutes = require('./public');
+var municipalityRoutes = require('./municipalities');
+var departmentRoutes = require('./departments');
+var journalRoutes = require('./journals');
+var recruitmentRoutes = require('./recruitments');
+var routes = [];
 
 routes = routes.concat(publicRoutes);
 routes = routes.concat(municipalityRoutes);

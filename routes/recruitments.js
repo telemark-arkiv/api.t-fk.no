@@ -1,8 +1,7 @@
 'use strict';
 
-var handlers = require('../handlers/recruitments')
-  , routes
-  ;
+var handlers = require('../handlers/recruitments');
+var routes;
 
 routes = [
   {
@@ -15,6 +14,6 @@ routes = [
     path: '/recruitment/{jobid}',
     handler: handlers.getRecruitment
   }
-]
+];
 
 module.exports = routes;

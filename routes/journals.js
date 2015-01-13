@@ -1,8 +1,7 @@
 'use strict';
 
-var handlers = require('../handlers/journals')
-  , routes
-  ;
+var handlers = require('../handlers/journals');
+var routes;
 
 routes = [
   {
@@ -45,6 +44,6 @@ routes = [
     path: '/journal/{jpSeknr}',
     handler: handlers.getJournal
   }
-]
+];
 
 module.exports = routes;

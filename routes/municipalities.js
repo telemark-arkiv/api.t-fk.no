@@ -1,8 +1,7 @@
 'use strict';
 
-var handlers = require('../handlers/municipalities')
-  , routes
-  ;
+var handlers = require('../handlers/municipalities');
+var routes;
 
 routes = [
   {
@@ -15,6 +14,6 @@ routes = [
     path: '/municipality/{municipalityId}',
     handler: handlers.getMunicipality
   }
-]
+];
 
 module.exports = routes;
