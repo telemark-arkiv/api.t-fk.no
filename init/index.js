@@ -1,28 +1,27 @@
 'use strict';
 
-var fs = require('fs')
-  , mongojs = require('mongojs')
-  , config = require('../config')
-  , DB = mongojs(config.DB)
-  , dataList = [
-    {
-      "db":DB.collection('municipalities'),
-      "file": "init/data/municipalities.json"
-    },
-    {
-      "db":DB.collection('departments'),
-      "file": "init/data/departments.json"
-    },
-    {
-      "db":DB.collection('journals'),
-      "file": "init/data/journals.json"
-    },
-    {
-      "db":DB.collection('recruitments'),
-      "file": "init/data/recruitments.json"
-    }
-  ]
-  ;
+var fs = require('fs');
+var mongojs = require('mongojs');
+var config = require('../config');
+var DB = mongojs(config.DB);
+var dataList = [
+  {
+    'db':DB.collection('municipalities'),
+    'file': 'init/data/municipalities.json'
+  },
+  {
+    'db':DB.collection('departments'),
+    'file': 'init/data/departments.json'
+  },
+  {
+    'db':DB.collection('journals'),
+    'file': 'init/data/journals.json'
+  },
+  {
+    'db':DB.collection('recruitments'),
+    'file': 'init/data/recruitments.json'
+  }
+];
 
 function getData(opts, callback){
   fs.readFile(opts.file, function(err, data){
@@ -32,7 +31,7 @@ function getData(opts, callback){
       opts.data = JSON.parse(data.toString());
       return callback(null, opts);
     }
-  })
+  });
 }
 
 function addDocument(db, post){
@@ -47,7 +46,7 @@ function addDocument(db, post){
 
 function addDocuments(err, opts){
   if(err){
-    console.error(err)
+    console.error(err);
   } else {
     opts.db.drop();
     opts.data.forEach(function(document){
@@ -58,5 +57,5 @@ function addDocuments(err, opts){
 
 //Imports all init data
 dataList.forEach(function(opts){
-  getData(opts, addDocuments)
+  getData(opts, addDocuments);
 });
