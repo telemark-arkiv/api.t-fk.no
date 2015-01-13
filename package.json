@@ -26,7 +26,6 @@
     "util-api-cipher": "git+https://github.com/telemark/util-api-cipher.git"
   },
   "devDependencies": {
-    "jsdoc": "^3.3.0-alpha10",
     "mocha": "^2.0.1",
     "supertest": "^0.14.0"
   }
