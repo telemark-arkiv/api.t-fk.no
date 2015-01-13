@@ -1,19 +1,18 @@
 'use strict';
 
-var mongojs = require('mongojs')
-  , cipher = require('util-api-cipher')
-  , config = require('../config')
-  , db = mongojs(config.DB)
-  , journals = db.collection('journals')
-  ;
+var mongojs = require('mongojs');
+var cipher = require('util-api-cipher');
+var config = require('../config');
+var db = mongojs(config.DB);
+var journals = db.collection('journals');
 
 function getLatestJournalDate(cb){
-  journals.find().sort({"JOURNPOST_OJ.JP_JDATO":-1}).limit(1, function (err, data) {
+  journals.find().sort({'JOURNPOST_OJ.JP_JDATO':-1}).limit(1, function (err, data) {
     if(err){
       return cb(err, null);
     } else {
       if(data){
-        return cb(null, {date: data[0].JOURNPOST_OJ.JP_JDATO})
+        return cb(null, {date: data[0].JOURNPOST_OJ.JP_JDATO});
       } else {
         return cb(null, data);
       }
@@ -26,67 +25,66 @@ function getJournals(request, reply){
     if(err){
       reply(err);
     } else {
-      reply(data)
+      reply(data);
     }
   });
 }
 
 function getJournalsByDate(request, reply){
-  var journalDate = parseInt(request.params.date, 10)
-    ;
-  journals.find({"JOURNPOST_OJ.JP_JDATO":journalDate}, function (err, data) {
+  var journalDate = parseInt(request.params.date, 10);
+
+  journals.find({'JOURNPOST_OJ.JP_JDATO':journalDate}, function (err, data) {
     if(err){
       reply(err);
     } else {
-      reply(data)
+      reply(data);
     }
   });
 }
 
 function getJournalsByDepartmentDistinct(request, reply){
-  journals.distinct("JOURNPOST_OJ.JP_ANSVAVD", function (err, data) {
+  journals.distinct('JOURNPOST_OJ.JP_ANSVAVD', function (err, data) {
     if(err){
       reply(err);
     } else {
-      reply(data)
+      reply(data);
     }
   });
 }
 
 function getJournalsByDepartment(request, reply){
-  var department = cipher.decrypt(request.params.department)
-    , q = {"JOURNPOST_OJ.JP_ANSVAVD":department}
-    ;
+  var department = cipher.decrypt(request.params.department);
+  var q = {'JOURNPOST_OJ.JP_ANSVAVD':department};
 
   if(request.query.date){
-    var journalDate = parseInt(request.query.date, 10)
-      ;
-    q["JOURNPOST_OJ.JP_JDATO"] = journalDate;
+    var journalDate = parseInt(request.query.date, 10);
+    q['JOURNPOST_OJ.JP_JDATO'] = journalDate;
   }
+
   journals.find(q, function (err, data) {
     if(err){
       reply(err);
     } else {
-      reply(data)
+      reply(data);
     }
   });
 }
 
 function getJournalsDatesDistinct(request, reply){
-  journals.distinct("JOURNPOST_OJ.JP_JDATO", function (err, data) {
+  journals.distinct('JOURNPOST_OJ.JP_JDATO', function (err, data) {
     if(err){
       reply(err);
     } else {
-      reply(data)
+      reply(data);
     }
   });
 }
 
 function getJournalsCollection(request, reply){
   var saSeknr = parseInt(request.params.saSeknr, 10);
-  journals.find({"SA_SEKNR":saSeknr}, function (err, data) {
+  journals.find({'SA_SEKNR':saSeknr}, function (err, data) {
     if(err){
-      reply(err)
+      reply(err);
     } else {
       reply(data);
     }
@@ -95,9 +93,9 @@ function getJournalsCollection(request, reply){
 
 function getJournal(request, reply){
   var jpSeknr = parseInt(request.params.jpSeknr, 10);
-  journals.find({"JOURNPOST_OJ.JP_SEKNR":jpSeknr}, function (err, data) {
+  journals.find({'JOURNPOST_OJ.JP_SEKNR':jpSeknr}, function (err, data) {
     if(err){
-      reply(err)
+      reply(err);
     } else {
       reply(data);
     }
@@ -107,16 +105,15 @@ function getJournal(request, reply){
 function getLatestJournals(request, reply){
   getLatestJournalDate(function(error, date){
     if(error){
-      reply(error)
+      reply(error);
     } else {
       if(date.date){
-        var journalDate = parseInt(date.date, 10)
-          ;
-        journals.find({"JOURNPOST_OJ.JP_JDATO":journalDate}, function (err, data) {
+        var journalDate = parseInt(date.date, 10);
+        journals.find({'JOURNPOST_OJ.JP_JDATO':journalDate}, function (err, data) {
           if(err){
             reply(err);
           } else {
-            reply(data)
+            reply(data);
           }
         });
       } else {
@@ -125,7 +122,6 @@ function getLatestJournals(request, reply){
     }
   });
 }
-
 
 module.exports.getJournals = getJournals;
 
