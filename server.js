@@ -1,10 +1,9 @@
 'use strict';
 
-var Hapi = require('hapi')
-  , routes = require('./routes')
-  , config = require('./config')
-  , server = new Hapi.Server()
-  ;
+var Hapi = require('hapi');
+var routes = require('./routes');
+var config = require('./config');
+var server = new Hapi.Server();
 
 server.connection({
   port:config.SERVER_PORT,
