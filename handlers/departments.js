@@ -1,17 +1,16 @@
 'use strict';
 
-var mongojs = require('mongojs')
-  , config = require('../config')
-  , db = mongojs(config.DB)
-  , departments = db.collection('departments')
-  ;
+var mongojs = require('mongojs');
+var config = require('../config');
+var db = mongojs(config.DB);
+var departments = db.collection('departments');
 
 function getDepartments(request, reply){
   departments.find(request.query, function (err, data) {
     if(err){
       reply(err);
     } else {
-      reply(data)
+      reply(data);
     }
   });
 }
@@ -19,7 +18,7 @@ function getDepartments(request, reply){
 function getDepartment(request, reply){
   departments.findOne({departmentId:request.params.departmentId}, function (err, data) {
     if(err){
-      reply(err)
+      reply(err);
     } else {
       reply(data);
     }
