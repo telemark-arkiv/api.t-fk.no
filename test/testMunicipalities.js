@@ -1,9 +1,8 @@
-'use strict'
+'use strict';
 
-var request = require('supertest')
-  , server = require('../server')
-  , config = require('../config')
-  ;
+var request = require('supertest');
+var server = require('../server');
+var config = require('../config');
 
 request = request('http://localhost:' + config.SERVER_PORT);
 
@@ -24,7 +23,7 @@ describe('Server municipality', function () {
         .set('Accept', 'application/json')
         .expect('Content-Type', /json/)
         .expect(200, done);
-    })
+    });
   });
 
   describe('GET /municipality/0805', function(){
@@ -34,7 +33,7 @@ describe('Server municipality', function () {
         .set('Accept', 'application/json')
         .expect('Content-Type', /json/)
         .expect(200, done);
-    })
+    });
   });
 
 });

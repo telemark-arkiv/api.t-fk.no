@@ -1,10 +1,9 @@
-'use strict'
+'use strict';
 
-var request = require('supertest')
-  , cipher = require('util-api-cipher')
-  , server = require('../server')
-  , config = require('../config')
-  ;
+var request = require('supertest');
+var cipher = require('util-api-cipher');
+var server = require('../server');
+var config = require('../config');
 
 request = request('http://localhost:' + config.SERVER_PORT);
 
@@ -25,7 +24,7 @@ describe('Server journals', function () {
         .set('Accept', 'application/json')
         .expect('Content-Type', /json/)
         .expect(200, done);
-    })
+    });
   });
 
   describe('GET /journals/date/distinct', function(){
@@ -35,7 +34,7 @@ describe('Server journals', function () {
         .set('Accept', 'application/json')
         .expect('Content-Type', /json/)
         .expect(200, done);
-    })
+    });
   });
 
   describe('GET /journals/date/20141016', function(){
@@ -45,7 +44,7 @@ describe('Server journals', function () {
         .set('Accept', 'application/json')
         .expect('Content-Type', /json/)
         .expect(200, done);
-    })
+    });
   });
 
   describe('GET /journals/department/distinct', function(){
@@ -55,7 +54,7 @@ describe('Server journals', function () {
         .set('Accept', 'application/json')
         .expect('Content-Type', /json/)
         .expect(200, done);
-    })
+    });
   });
 
   describe('GET /journals/department/Seksjon for kvalitet og utvikling', function(){
@@ -66,7 +65,7 @@ describe('Server journals', function () {
         .set('Accept', 'application/json')
         .expect('Content-Type', /json/)
         .expect(200, done);
-    })
+    });
   });
 
   describe('GET /journals/department/Seksjon for kvalitet og utvikling?date=20141016', function(){
@@ -77,7 +76,7 @@ describe('Server journals', function () {
         .set('Accept', 'application/json')
         .expect('Content-Type', /json/)
         .expect(200, done);
-    })
+    });
   });
 
   describe('GET /journals/collection/65', function(){
@@ -87,7 +86,7 @@ describe('Server journals', function () {
         .set('Accept', 'application/json')
         .expect('Content-Type', /json/)
         .expect(200, done);
-    })
+    });
   });
 
   describe('GET /journals/latest', function(){
@@ -97,7 +96,7 @@ describe('Server journals', function () {
         .set('Accept', 'application/json')
         .expect('Content-Type', /json/)
         .expect(200, done);
-    })
+    });
   });
 
   describe('GET /journal/211', function(){
@@ -107,7 +106,7 @@ describe('Server journals', function () {
         .set('Accept', 'application/json')
         .expect('Content-Type', /json/)
         .expect(200, done);
-    })
+    });
   });
 
 });
