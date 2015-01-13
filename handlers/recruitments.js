@@ -1,17 +1,16 @@
 'use strict';
 
-var mongojs = require('mongojs')
-  , config = require('../config')
-  , db = mongojs(config.DB)
-  , recruitments = db.collection('recruitments')
-  ;
+var mongojs = require('mongojs');
+var config = require('../config');
+var db = mongojs(config.DB);
+var recruitments = db.collection('recruitments');
 
 function getRecruitments(request, reply){
   recruitments.find(request.query, function (err, data) {
     if(err){
       reply(err);
     } else {
-      reply(data)
+      reply(data);
     }
   });
 }
@@ -19,7 +18,7 @@ function getRecruitments(request, reply){
 function getRecruitment(request, reply){
   recruitments.findOne({jobid:parseInt(request.params.jobid, 10)}, function (err, data) {
     if(err){
-      reply(err)
+      reply(err);
     } else {
       reply(data);
     }
