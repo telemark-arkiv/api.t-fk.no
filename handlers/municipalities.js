@@ -5,9 +5,9 @@ var config = require('../config');
 var db = mongojs(config.DB);
 var municipalities = db.collection('municipalities');
 
-function getMunicipalities(request, reply){
-  municipalities.find(request.query, function (err, data) {
-    if(err){
+function getMunicipalities(request, reply) {
+  municipalities.find(request.query, function(err, data) {
+    if (err) {
       reply(err);
     } else {
       reply(data);
@@ -15,9 +15,9 @@ function getMunicipalities(request, reply){
   });
 }
 
-function getMunicipality(request, reply){
-  municipalities.findOne({kode:request.params.municipalityId}, function (err, data) {
-    if(err){
+function getMunicipality(request, reply) {
+  municipalities.findOne({kode:request.params.municipalityId}, function(err, data) {
+    if (err) {
       reply(err);
     } else {
       reply(data);
