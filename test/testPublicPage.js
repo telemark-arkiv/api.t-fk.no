@@ -6,18 +6,18 @@ var config = require('../config');
 
 request = request('http://localhost:' + config.SERVER_PORT);
 
-describe('Public server', function () {
+describe('Public server', function() {
 
-  before(function () {
+  before(function() {
     server.start();
   });
 
-  after(function () {
+  after(function() {
     server.stop();
   });
 
-  describe('GET /', function(){
-    it('respond with json', function(done){
+  describe('GET /', function() {
+    it('respond with json', function(done) {
       request
         .get('/')
         .set('Accept', 'application/json')

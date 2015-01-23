@@ -6,18 +6,18 @@ var config = require('../config');
 
 request = request('http://localhost:' + config.SERVER_PORT);
 
-describe('Server recruitments', function () {
+describe('Server recruitments', function() {
 
-  before(function () {
+  before(function() {
     server.start();
   });
 
-  after(function () {
+  after(function() {
     server.stop();
   });
 
-  describe('GET /recruitments', function(){
-    it('respond with json', function(done){
+  describe('GET /recruitments', function() {
+    it('respond with json', function(done) {
       request
         .get('/recruitments')
         .set('Accept', 'application/json')
@@ -26,8 +26,8 @@ describe('Server recruitments', function () {
     });
   });
 
-  describe('GET /recruitment/2402', function(){
-    it('respond with json', function(done){
+  describe('GET /recruitment/2402', function() {
+    it('respond with json', function(done) {
       request
         .get('/recruitment/2402')
         .set('Accept', 'application/json')
