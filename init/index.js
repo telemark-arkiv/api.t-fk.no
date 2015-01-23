@@ -23,9 +23,9 @@ var dataList = [
   }
 ];
 
-function getData(opts, callback){
-  fs.readFile(opts.file, function(err, data){
-    if(err){
+function getData(opts, callback) {
+  fs.readFile(opts.file, function(err, data) {
+    if (err) {
       return callback(err, null);
     } else {
       opts.data = JSON.parse(data.toString());
@@ -34,9 +34,9 @@ function getData(opts, callback){
   });
 }
 
-function addDocument(db, post){
-  db.save(post, function (err, success) {
-    if(err){
+function addDocument(db, post) {
+  db.save(post, function(err, success) {
+    if (err) {
       console.error(err);
     } else {
       console.log(success);
@@ -44,18 +44,18 @@ function addDocument(db, post){
   });
 }
 
-function addDocuments(err, opts){
-  if(err){
+function addDocuments(err, opts) {
+  if (err) {
     console.error(err);
   } else {
     opts.db.drop();
-    opts.data.forEach(function(document){
+    opts.data.forEach(function(document) {
       addDocument(opts.db, document);
     });
   }
 }
 
 //Imports all init data
-dataList.forEach(function(opts){
+dataList.forEach(function(opts) {
   getData(opts, addDocuments);
 });
