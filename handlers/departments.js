@@ -5,9 +5,9 @@ var config = require('../config');
 var db = mongojs(config.DB);
 var departments = db.collection('departments');
 
-function getDepartments(request, reply){
-  departments.find(request.query, function (err, data) {
-    if(err){
+function getDepartments(request, reply) {
+  departments.find(request.query, function(err, data) {
+    if (err) {
       reply(err);
     } else {
       reply(data);
@@ -15,16 +15,15 @@ function getDepartments(request, reply){
   });
 }
 
-function getDepartment(request, reply){
-  departments.findOne({departmentId:request.params.departmentId}, function (err, data) {
-    if(err){
+function getDepartment(request, reply) {
+  departments.findOne({departmentId:request.params.departmentId}, function(err, data) {
+    if (err) {
       reply(err);
     } else {
       reply(data);
     }
   });
 }
-
 
 module.exports.getDepartments = getDepartments;
 
