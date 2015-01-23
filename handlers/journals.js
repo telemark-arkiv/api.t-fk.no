@@ -6,12 +6,12 @@ var config = require('../config');
 var db = mongojs(config.DB);
 var journals = db.collection('journals');
 
-function getLatestJournalDate(cb){
-  journals.find().sort({'JOURNPOST_OJ.JP_JDATO':-1}).limit(1, function (err, data) {
-    if(err){
+function getLatestJournalDate(cb) {
+  journals.find().sort({'JOURNPOST_OJ.JP_JDATO':-1}).limit(1, function(err, data) {
+    if (err) {
       return cb(err, null);
     } else {
-      if(data){
+      if (data) {
         return cb(null, {date: data[0].JOURNPOST_OJ.JP_JDATO});
       } else {
         return cb(null, data);
@@ -20,9 +20,9 @@ function getLatestJournalDate(cb){
   });
 }
 
-function getJournals(request, reply){
-  journals.find(request.query, function (err, data) {
-    if(err){
+function getJournals(request, reply) {
+  journals.find(request.query, function(err, data) {
+    if (err) {
       reply(err);
     } else {
       reply(data);
@@ -30,11 +30,11 @@ function getJournals(request, reply){
   });
 }
 
-function getJournalsByDate(request, reply){
+function getJournalsByDate(request, reply) {
   var journalDate = parseInt(request.params.date, 10);
 
-  journals.find({'JOURNPOST_OJ.JP_JDATO':journalDate}, function (err, data) {
-    if(err){
+  journals.find({'JOURNPOST_OJ.JP_JDATO':journalDate}, function(err, data) {
+    if (err) {
       reply(err);
     } else {
       reply(data);
@@ -42,9 +42,9 @@ function getJournalsByDate(request, reply){
   });
 }
 
-function getJournalsByDepartmentDistinct(request, reply){
-  journals.distinct('JOURNPOST_OJ.JP_ANSVAVD', function (err, data) {
-    if(err){
+function getJournalsByDepartmentDistinct(request, reply) {
+  journals.distinct('JOURNPOST_OJ.JP_ANSVAVD', function(err, data) {
+    if (err) {
       reply(err);
     } else {
       reply(data);
@@ -52,17 +52,17 @@ function getJournalsByDepartmentDistinct(request, reply){
   });
 }
 
-function getJournalsByDepartment(request, reply){
+function getJournalsByDepartment(request, reply) {
   var department = cipher.decrypt(request.params.department);
   var q = {'JOURNPOST_OJ.JP_ANSVAVD':department};
 
-  if(request.query.date){
+  if (request.query.date) {
     var journalDate = parseInt(request.query.date, 10);
     q['JOURNPOST_OJ.JP_JDATO'] = journalDate;
   }
 
-  journals.find(q, function (err, data) {
-    if(err){
+  journals.find(q, function(err, data) {
+    if (err) {
       reply(err);
     } else {
       reply(data);
@@ -70,9 +70,9 @@ function getJournalsByDepartment(request, reply){
   });
 }
 
-function getJournalsDatesDistinct(request, reply){
-  journals.distinct('JOURNPOST_OJ.JP_JDATO', function (err, data) {
-    if(err){
+function getJournalsDatesDistinct(request, reply) {
+  journals.distinct('JOURNPOST_OJ.JP_JDATO', function(err, data) {
+    if (err) {
       reply(err);
     } else {
       reply(data);
@@ -80,10 +80,10 @@ function getJournalsDatesDistinct(request, reply){
   });
 }
 
-function getJournalsCollection(request, reply){
+function getJournalsCollection(request, reply) {
   var saSeknr = parseInt(request.params.saSeknr, 10);
-  journals.find({'SA_SEKNR':saSeknr}, function (err, data) {
-    if(err){
+  journals.find({'SA_SEKNR':saSeknr}, function(err, data) {
+    if (err) {
       reply(err);
     } else {
       reply(data);
@@ -91,10 +91,10 @@ function getJournalsCollection(request, reply){
   });
 }
 
-function getJournal(request, reply){
+function getJournal(request, reply) {
   var jpSeknr = parseInt(request.params.jpSeknr, 10);
-  journals.find({'JOURNPOST_OJ.JP_SEKNR':jpSeknr}, function (err, data) {
-    if(err){
+  journals.find({'JOURNPOST_OJ.JP_SEKNR':jpSeknr}, function(err, data) {
+    if (err) {
       reply(err);
     } else {
       reply(data);
@@ -102,15 +102,15 @@ function getJournal(request, reply){
   });
 }
 
-function getLatestJournals(request, reply){
-  getLatestJournalDate(function(error, date){
-    if(error){
+function getLatestJournals(request, reply) {
+  getLatestJournalDate(function(error, date) {
+    if (error) {
       reply(error);
     } else {
-      if(date.date){
+      if (date.date) {
         var journalDate = parseInt(date.date, 10);
-        journals.find({'JOURNPOST_OJ.JP_JDATO':journalDate}, function (err, data) {
-          if(err){
+        journals.find({'JOURNPOST_OJ.JP_JDATO':journalDate}, function(err, data) {
+          if (err) {
             reply(err);
           } else {
             reply(data);
