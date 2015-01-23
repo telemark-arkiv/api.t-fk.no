@@ -12,14 +12,14 @@ server.connection({
 
 server.route(routes);
 
-function startServer(){
-  server.start(function () {
+function startServer() {
+  server.start(function() {
     console.log('Server running at:', server.info.uri);
   });
 }
 
-function stopServer(){
-  server.stop(function () {
+function stopServer() {
+  server.stop(function() {
     console.log('Server stopped');
   });
 }
