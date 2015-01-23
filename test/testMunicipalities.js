@@ -6,18 +6,18 @@ var config = require('../config');
 
 request = request('http://localhost:' + config.SERVER_PORT);
 
-describe('Server municipality', function () {
+describe('Server municipality', function() {
 
-  before(function () {
+  before(function() {
     server.start();
   });
 
-  after(function () {
+  after(function() {
     server.stop();
   });
 
-  describe('GET /municipalities', function(){
-    it('respond with json', function(done){
+  describe('GET /municipalities', function() {
+    it('respond with json', function(done) {
       request
         .get('/municipalities')
         .set('Accept', 'application/json')
@@ -26,8 +26,8 @@ describe('Server municipality', function () {
     });
   });
 
-  describe('GET /municipality/0805', function(){
-    it('respond with json', function(done){
+  describe('GET /municipality/0805', function() {
+    it('respond with json', function(done) {
       request
         .get('/municipality/0805')
         .set('Accept', 'application/json')
