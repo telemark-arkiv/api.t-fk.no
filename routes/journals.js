@@ -43,6 +43,11 @@ routes = [
     method: 'GET',
     path: '/journal/{jpSeknr}',
     handler: handlers.getJournal
+  },
+  {
+    method: 'GET',
+    path: '/journals/{searchText}',
+    handler: handlers.searchJournals
   }
 ];
 

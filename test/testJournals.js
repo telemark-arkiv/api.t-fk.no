@@ -109,4 +109,14 @@ describe('Server journals', function() {
     });
   });
 
+  describe('GET /journals/forslag', function() {
+    it('respond with json', function(done) {
+      request
+        .get('/journals/forslag')
+        .set('Accept', 'application/json')
+        .expect('Content-Type', /json/)
+        .expect(200, done);
+    });
+  });
+
 });
