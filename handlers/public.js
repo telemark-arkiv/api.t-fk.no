@@ -5,6 +5,7 @@ var message = {
   departments: '/departments',
   department: '/department/<departmentId>',
   journals: '/journals',
+  journalsSearch: '/journals/<searchText>',
   journalsByDateDistinct: '/journals/date/distinct',
   journalsByDate: '/journals/date/<yyyymmdd>',
   journalsByDepartment: '/journals/department/<aes192(departmentName)>[?date=<yyyymmdd>]',
