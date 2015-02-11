@@ -123,6 +123,16 @@ function getLatestJournals(request, reply) {
   });
 }
 
+function searchJournals(request, reply) {
+  journals.find({'$text':{'$search':request.params.searchText}}, function(err, data) {
+    if (err) {
+      reply(err);
+    } else {
+      reply(data);
+    }
+  });
+}
+
 module.exports.getJournals = getJournals;
 
 module.exports.getJournalsByDate = getJournalsByDate;
@@ -138,3 +148,5 @@ module.exports.getJournalsCollection = getJournalsCollection;
 module.exports.getJournal = getJournal;
 
 module.exports.getLatestJournals = getLatestJournals;
+
+module.exports.searchJournals = searchJournals;
