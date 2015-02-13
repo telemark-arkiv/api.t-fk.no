@@ -7,7 +7,7 @@ var server = new Hapi.Server();
 
 server.connection({
   port:config.SERVER_PORT,
-  routes:{cors:true}
+  routes:{cors:{credentials:true}}
 });
 
 server.route(routes);
