@@ -1,6 +1,6 @@
 # Server setup
 
-# Install mongodb
+## Install mongodb
 ```
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
 echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' | sudo tee /etc/apt/sources.list.d/mongodb.list
@@ -31,6 +31,13 @@ npm install
 npm run-script init
 forever start --spinSleepTime 10000 index.js
 ```
+
+## Config mongo collections
+```
+cd api.t-fk.no.git/mongoconfig
+mongo journals.js
+```
+
 
 ## Install nginx
 ```
