@@ -47,6 +47,16 @@ describe('Server journals', function() {
     });
   });
 
+  describe('GET /journals/daterange/20141016/20141016', function() {
+    it('respond with json', function(done) {
+      request
+        .get('/journals/daterange/20141016/20141016')
+        .set('Accept', 'application/json')
+        .expect('Content-Type', /json/)
+        .expect(200, done);
+    });
+  });
+
   describe('GET /journals/department/distinct', function() {
     it('respond with json', function(done) {
       request
