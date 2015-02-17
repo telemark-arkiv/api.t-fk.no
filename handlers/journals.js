@@ -150,6 +150,8 @@ module.exports.getJournals = getJournals;
 
 module.exports.getJournalsByDate = getJournalsByDate;
 
+module.exports.getJournalsByDateRange = getJournalsByDateRange;
+
 module.exports.getJournalsDatesDistinct = getJournalsDatesDistinct;
 
 module.exports.getJournalsByDepartment = getJournalsByDepartment;
