@@ -8,7 +8,7 @@ var message = {
   journalsSearch: '/journals/<searchText>',
   journalsByDateDistinct: '/journals/date/distinct',
   journalsByDate: '/journals/date/<yyyymmdd>',
-  journalsByDate: '/journals/date/<fromDate yyyymmdd>/<toDate yyyymmdd>',
+  journalsByDateRange: '/journals/date/<fromDate yyyymmdd>/<toDate yyyymmdd>',
   journalsByDepartment: '/journals/department/<aes192(departmentName)>[?date=<yyyymmdd>]',
   journalsByDepartmentDistinct: '/journals/department/distinct',
   journalsCollection: '/journals/collection/<saSeknr>',
