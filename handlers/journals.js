@@ -42,6 +42,19 @@ function getJournalsByDate(request, reply) {
   });
 }
 
+function getJournalsByDateRange(request, reply) {
+  var fromDate = parseInt(request.params.fromDate, 10);
+  var toDate = parseInt(request.params.toDate, 10);
+
+  journals.find({'JOURNPOST_OJ.JP_JDATO':{ '$gte': fromDate, '$lte': toDate }}, function(err, data) {
+    if (err) {
+      reply(err);
+    } else {
+      reply(data);
+    }
+  });
+}
+
 function getJournalsByDepartmentDistinct(request, reply) {
   journals.distinct('JOURNPOST_OJ.JP_ANSVAVD', function(err, data) {
     if (err) {
