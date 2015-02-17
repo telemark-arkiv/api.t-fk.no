@@ -9,11 +9,15 @@ sudo apt-get install -y mongodb-org
 sudo service mongod start
 ```
 
-## Install nodejs and forever
+## Install io.js and forever
 ```
 curl -sL https://deb.nodesource.com/setup | sudo bash -
 sudo apt-get install -y nodejs build-essential
 sudo npm -g install forever
+wget https://iojs.org/dist/v1.2.0/iojs-v1.2.0-linux-x64.tar.gz
+tar zxf iojs-v1.0.2-linux-x64.tar.gz
+cd iojs-v1.2.0-linux-x64
+sudo cp bin/* /usr/bin
 ```
 
 ## Set permissions
