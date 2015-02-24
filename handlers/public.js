@@ -17,7 +17,7 @@ var message = {
   municipalities: '/municipalities',
   municipality: '/municipality/<municipalityId>',
   recruitments: '/recruitments',
-  recruitment: '/recruitment/<recruitmentId>',
+  recruitment: '/recruitment/<jobid>',
   quote: 'Thank you for your cooperation'
 };
 
