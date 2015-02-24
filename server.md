@@ -38,8 +38,9 @@ forever start --spinSleepTime 10000 index.js
 
 ## Config mongo collections
 ```
-cd api.t-fk.no.git/mongoconfig
+cd api.t-fk.no/mongoconfig
 mongo journals.js
+mongo recruitments.js
 ```
 
 
