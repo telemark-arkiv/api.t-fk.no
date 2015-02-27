@@ -19,7 +19,7 @@ describe('Server distance', function() {
   describe('GET /distance/origin/destination', function() {
     it('respond with json', function(done) {
       request
-        .get('/distance/Kjærlighetsstien 24, 3670 Notodden/Tveiten skole, Notodden')
+        .get('/distance/Fylkesbakken 10, 3715 Skien/Notodden videregående skole, Notodden')
         .set('Accept', 'application/json')
         .expect('Content-Type', /json/)
         .expect(200, done);
