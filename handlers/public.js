@@ -4,7 +4,6 @@ var message = {
   message: 'Hello, I\'m your API',
   departments: '/departments',
   department: '/department/<departmentId>',
-  distance: '/distance/<originAddress>/<destinationAddress>',
   journals: '/journals',
   journalsSearch: '/journals/<searchText>',
   journalsByDateDistinct: '/journals/date/distinct',
