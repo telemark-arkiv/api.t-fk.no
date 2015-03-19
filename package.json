@@ -24,7 +24,9 @@
     "google-distance": "^0.2.1",
     "hapi": "^8.1.0",
     "mongojs": "^0.18.1",
-    "util-api-cipher": "git+https://github.com/telemark/util-api-cipher.git"
+    "util-api-cipher": "git+https://github.com/telemark/util-api-cipher.git",
+    "tfk-api-forms": "git+https://github.com/zrrrzzt/tfk-api-forms.git",
+    "tfk-api-distance": "git+https://github.com/zrrrzzt/tfk-api-distance.git"
   },
   "devDependencies": {
     "jscs": "^1.10.0",

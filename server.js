@@ -1,6 +1,8 @@
 'use strict';
 
 var Hapi = require('hapi');
+var formsService = require('tfk-api-forms');
+var distanceService = require('tfk-api-distance');
 var routes = require('./routes');
 var config = require('./config');
 var server = new Hapi.Server();
@@ -8,6 +10,21 @@ var server = new Hapi.Server();
 server.connection({
   port:config.SERVER_PORT,
   routes:{cors:{credentials:true}}
+});
+
+server.register([
+  {
+    register: formsService,
+    options: {}
+  },
+  {
+    register: distanceService,
+    options: {}
+  }
+], function(err) {
+  if (err) {
+    console.error('Failed to load a plugin:', err);
+  }
 });
 
 server.route(routes);
