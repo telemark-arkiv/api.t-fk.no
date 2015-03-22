@@ -11,13 +11,14 @@ sudo service mongod start
 
 ## Install io.js and forever
 ```
-curl -sL https://deb.nodesource.com/setup | sudo bash -
-sudo apt-get install -y nodejs build-essential
+# Note the new setup script name for io.js
+curl -sL https://deb.nodesource.com/setup_iojs_1.x | sudo bash -
+
+# Then install with:
+sudo apt-get install -y iojs
+
+# Install forever
 sudo npm -g install forever
-wget https://iojs.org/dist/v1.2.0/iojs-v1.2.0-linux-x64.tar.gz
-tar zxf iojs-v1.2.0-linux-x64.tar.gz
-cd iojs-v1.2.0-linux-x64
-sudo cp bin/* /usr/bin
 ```
 
 ## Set permissions
