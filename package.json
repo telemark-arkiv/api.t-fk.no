@@ -25,7 +25,8 @@
     "mongojs": "^0.18.1",
     "util-api-cipher": "git+https://github.com/telemark/util-api-cipher.git",
     "tfk-api-forms": "git+https://github.com/zrrrzzt/tfk-api-forms.git",
-    "tfk-api-distance": "git+https://github.com/zrrrzzt/tfk-api-distance.git"
+    "tfk-api-distance": "git+https://github.com/zrrrzzt/tfk-api-distance.git",
+    "tfk-api-stages": "git+https://github.com/zrrrzzt/tfk-api-stages.git"
   },
   "devDependencies": {
     "jscs": "^1.10.0",
