@@ -4,6 +4,7 @@ var Hapi = require('hapi');
 var formsService = require('tfk-api-forms');
 var distanceService = require('tfk-api-distance');
 var stagesService = require('tfk-api-stages');
+var geocodeService = require('tfk-api-geocode');
 var routes = require('./routes');
 var config = require('./config');
 var server = new Hapi.Server();
@@ -24,6 +25,10 @@ server.register([
   },
   {
     register: stagesService,
+    options: {}
+  },
+  {
+    register: geocodeService,
     options: {}
   }
 ], function(err) {
