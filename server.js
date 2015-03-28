@@ -1,6 +1,7 @@
 'use strict';
 
 var Hapi = require('hapi');
+var apidocsService = require('lout');
 var formsService = require('tfk-api-forms');
 var distanceService = require('tfk-api-distance');
 var stagesService = require('tfk-api-stages');
@@ -16,6 +17,10 @@ server.connection({
 });
 
 server.register([
+  {
+    register: apidocsService,
+    options: {}
+  },
   {
     register: formsService,
     options: {}

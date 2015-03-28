@@ -22,13 +22,15 @@
   },
   "dependencies": {
     "hapi": "^8.4.0",
+    "joi": "^6.0.8",
+    "lout": "^6.2.1",
     "mongojs": "^0.18.1",
-    "util-api-cipher": "git+https://github.com/telemark/util-api-cipher.git",
-    "tfk-api-forms": "git+https://github.com/zrrrzzt/tfk-api-forms.git",
     "tfk-api-distance": "git+https://github.com/zrrrzzt/tfk-api-distance.git",
-    "tfk-api-stages": "git+https://github.com/zrrrzzt/tfk-api-stages.git",
+    "tfk-api-forms": "git+https://github.com/zrrrzzt/tfk-api-forms.git",
     "tfk-api-geocode": "git+https://github.com/zrrrzzt/tfk-api-geocode.git",
-    "tfk-api-schools": "git+https://github.com/zrrrzzt/tfk-api-schools.git"
+    "tfk-api-schools": "git+https://github.com/zrrrzzt/tfk-api-schools.git",
+    "tfk-api-stages": "git+https://github.com/zrrrzzt/tfk-api-stages.git",
+    "util-api-cipher": "git+https://github.com/telemark/util-api-cipher.git"
   },
   "devDependencies": {
     "jscs": "^1.10.0",

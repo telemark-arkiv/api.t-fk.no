@@ -2,22 +2,7 @@
 
 var message = {
   message: 'Hello, I\'m your API',
-  departments: '/departments',
-  department: '/department/<departmentId>',
-  journals: '/journals',
-  journalsSearch: '/journals/<searchText>',
-  journalsByDateDistinct: '/journals/date/distinct',
-  journalsByDate: '/journals/date/<yyyymmdd>',
-  journalsByDateRange: '/journals/date/<fromDate yyyymmdd>/<toDate yyyymmdd>',
-  journalsByDepartment: '/journals/department/<aes192(departmentName)>[?date=<yyyymmdd>]',
-  journalsByDepartmentDistinct: '/journals/department/distinct',
-  journalsCollection: '/journals/collection/<saSeknr>',
-  journalsLatest: '/journals/latest',
-  journal: '/journal/<jpSeknr>',
-  municipalities: '/municipalities',
-  municipality: '/municipality/<municipalityId>',
-  recruitments: '/recruitments',
-  recruitment: '/recruitment/<jobid>',
+  docs: '/docs',
   quote: 'Thank you for your cooperation'
 };
 
