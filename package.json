@@ -1,7 +1,7 @@
 {
   "name": "api.t-fk.no",
   "description": "API for Telemark fylkeskommune",
-  "version": "1.8.0",
+  "version": "1.8.1",
   "private": true,
   "author": {
     "name": "Geir Gåsodden",
@@ -33,8 +33,8 @@
     "util-api-cipher": "git+https://github.com/telemark/util-api-cipher.git"
   },
   "devDependencies": {
-    "jscs": "^1.10.0",
-    "mocha": "^2.1.0",
+    "jscs": "^1.12.0",
+    "mocha": "^2.2.1",
     "supertest": "^0.15.0"
   }
 }
