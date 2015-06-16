@@ -3,6 +3,7 @@
 var Hapi = require('hapi');
 var apidocsService = require('lout');
 var formsService = require('tfk-api-forms');
+var sessionService = require('tfk-api-session');
 var distanceService = require('tfk-api-distance');
 var stagesService = require('tfk-api-stages');
 var geocodeService = require('tfk-api-geocode');
@@ -23,6 +24,10 @@ server.register([
   },
   {
     register: formsService,
+    options: {}
+  },
+  {
+    register: sessionService,
     options: {}
   },
   {
