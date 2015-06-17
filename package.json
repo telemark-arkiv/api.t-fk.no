@@ -1,7 +1,7 @@
 {
   "name": "api.t-fk.no",
   "description": "API for Telemark fylkeskommune",
-  "version": "1.9.0",
+  "version": "1.10.0",
   "private": true,
   "author": {
     "name": "Geir Gåsodden",
@@ -31,7 +31,8 @@
     "tfk-api-geocode": "git+https://github.com/zrrrzzt/tfk-api-geocode.git",
     "tfk-api-schools": "git+https://github.com/zrrrzzt/tfk-api-schools.git",
     "tfk-api-stages": "git+https://github.com/zrrrzzt/tfk-api-stages.git",
-    "util-api-cipher": "git+https://github.com/telemark/util-api-cipher.git"
+    "util-api-cipher": "git+https://github.com/telemark/util-api-cipher.git",
+    "tfk-api-postnummer": "git+https://github.com/zrrrzzt/tfk-api-postnummer.git"
   },
   "devDependencies": {
     "jscs": "^1.12.0",

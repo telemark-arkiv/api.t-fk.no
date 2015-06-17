@@ -8,6 +8,7 @@ var distanceService = require('tfk-api-distance');
 var stagesService = require('tfk-api-stages');
 var geocodeService = require('tfk-api-geocode');
 var schoolsService = require('tfk-api-schools');
+var postnummerService = require('tfk-api-postnummer');
 var routes = require('./routes');
 var config = require('./config');
 var server = new Hapi.Server();
@@ -44,6 +45,10 @@ server.register([
   },
   {
     register: schoolsService,
+    options: {}
+  },
+  {
+    register: postnummerService,
     options: {}
   }
 ], function(err) {
