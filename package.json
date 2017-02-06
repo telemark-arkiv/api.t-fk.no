@@ -21,10 +21,10 @@
     "init-dev": "node 'init/index.js'"
   },
   "dependencies": {
-    "hapi": "^8.4.0",
-    "joi": "^6.0.8",
-    "lout": "^6.2.1",
-    "mongojs": "^0.18.1",
+    "hapi": "^16.1.0",
+    "joi": "^10.2.1",
+    "lout": "^9.2.0",
+    "mongojs": "^2.4.0",
     "tfk-api-distance": "git+https://github.com/zrrrzzt/tfk-api-distance.git",
     "tfk-api-session": "git+https://github.com/telemark/tfk-api-session.git",
     "tfk-api-forms": "git+https://github.com/zrrrzzt/tfk-api-forms.git",
@@ -35,8 +35,8 @@
     "tfk-api-postnummer": "git+https://github.com/zrrrzzt/tfk-api-postnummer.git"
   },
   "devDependencies": {
-    "jscs": "^1.12.0",
-    "mocha": "^2.2.1",
-    "supertest": "^0.15.0"
+    "jscs": "^3.0.7",
+    "mocha": "^3.2.0",
+    "supertest": "^3.0.0"
   }
 }
