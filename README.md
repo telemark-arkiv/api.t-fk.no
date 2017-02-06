@@ -1,5 +1,7 @@
 #api.t-fk.no
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/telemark/api.t-fk.no.svg)](https://greenkeeper.io/)
+
 The API for Telemark fylkeskommune
 
 ##Installation
