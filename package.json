@@ -35,7 +35,7 @@
     "tfk-api-postnummer": "git+https://github.com/zrrrzzt/tfk-api-postnummer.git"
   },
   "devDependencies": {
-    "jscs": "1.13.1",
+    "jscs": "3.0.7",
     "mocha": "2.5.3",
     "supertest": "0.15.0"
   }
