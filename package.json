@@ -21,7 +21,7 @@
     "init-dev": "node 'init/index.js'"
   },
   "dependencies": {
-    "hapi": "8.8.1",
+    "hapi": "17.4.0",
     "joi": "6.10.1",
     "lout": "6.2.3",
     "mongojs": "0.18.2",
