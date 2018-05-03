@@ -23,7 +23,7 @@
   "dependencies": {
     "hapi": "8.8.1",
     "joi": "6.10.1",
-    "lout": "6.2.3",
+    "lout": "11.0.1",
     "mongojs": "0.18.2",
     "tfk-api-distance": "git+https://github.com/zrrrzzt/tfk-api-distance.git",
     "tfk-api-session": "git+https://github.com/telemark/tfk-api-session.git",
